@@ -1,6 +1,6 @@
 # dfms-covid19
 
-[View on OpenSAFELY](https://jobs.opensafely.org/repo/https%253A%252F%252Fgithub.com%252FRachelS99%252Fdfms-covid19)
+[View on OpenSAFELY](https://jobs.opensafely.org/prescqipp/effect-of-covid-19-on-prescribing-of-dependence-forming-medicines-and-the-associated-health-utilisation/)
 
 Details of the purpose and any published outputs from this project can be found at the link above.
 
