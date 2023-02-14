@@ -1,0 +1,7 @@
+code,term
+185387006,New patient consultation
+325861000000105,Face to face consultation encounter type
+325871000000103,Remote consultation encounter type
+766841000000106,Consultation with patient encounter type
+766861000000107,Consultation with representative of patient encounter type
+766871000000100,Patient not present encounter type

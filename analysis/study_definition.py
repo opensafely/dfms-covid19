@@ -1,4 +1,5 @@
 from cohortextractor import StudyDefinition, patients, codelist, codelist_from_csv  # NOQA
+from demographic_variables import demographic_variables
 
 
 study = StudyDefinition(
