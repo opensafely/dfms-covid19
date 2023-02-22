@@ -8,6 +8,8 @@ from cohortextractor import (
     patients,
 )
 from demographic_variables import demographic_variables
+from indication_variables import indication_variables
+from medication_variables import medication_variables
 from codelists import *
 from datetime import date
 
@@ -20,9 +22,11 @@ study = StudyDefinition(
         "incidence": 0.2,
     },
 
+    population=patients.all(),
+
     ** demographic_variables,
 
-    population=patients.satisfying(
+    research_population=patients.satisfying(
         """
         registered = 1
         AND NOT has_died
@@ -56,16 +60,24 @@ study = StudyDefinition(
             between=["index_date", "last_day_of_month(index_date)"],
         ),
     ),
-        dfm_indications=patients.with_these_clinical_events(
+    with_indications=patients.with_these_clinical_events(
         ind_codes,
         find_last_match_in_period=True,
         between=["index_date", "last_day_of_month(index_date)"],
         returning="binary_flag",
         return_expectations={
-            "incidence": 0.2,
         },
     ),
-    social_precibing=patients.with_these_clinical_events(
+    with_consultation=patients.with_these_clinical_events(
+        gp_consultations,
+        find_last_match_in_period=True,
+        between=["index_date", "last_day_of_month(index_date)"],
+        returning="binary_flag",
+        return_expectations={
+            "incidence": 0.8,
+        },
+    ),
+    has_social_prescribing=patients.with_these_clinical_events(
         socialrx_codes,
         find_last_match_in_period=True,
         between=["index_date", "last_day_of_month(index_date)"],
@@ -74,4 +86,6 @@ study = StudyDefinition(
             "incidence": 0.2,
         },
     ),
+    ** indication_variables,
+    ** medication_variables
 )

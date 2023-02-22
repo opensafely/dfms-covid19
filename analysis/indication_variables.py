@@ -7,7 +7,7 @@ from cohortextractor import (
 )
 from codelists import *
 
-dfm_indications=patients.with_these_clinical_events(
+indications=patients.with_these_clinical_events(
         ind_codes,
         between=["index_date", "last_day_of_month(index_date)"],
         returning="category",
@@ -133,79 +133,76 @@ dfm_indications=patients.with_these_clinical_events(
                     "73867007": 0.008,
                     "75084000": 0.008,
                     "251000119105": 0.008,
-                    "28475009": 0.01,
-                    "36474008": 0.01,
-
+                    "28475009": 0.028,
+                    "36474008": 0.028,
                 },
             },
         },
     ),
 indication_variables = dict(
-    dfm_indication=patients.categorised_as(
+    indication=patients.categorised_as(
         {
-            "0": "DEFAULT",
-            "acute_pain": "indication = '274663001'",
-            "alcohol_withdrawal": "indication = '386449006'",
-            "body_dysmorphic_disorder": "indication = '83482000'",
-            "chronic_depression": "[indication = '192080009', '161891005', \
-                '134407002', '736464002', '274665008', '278860009', \
-                '144951000000106', '735644008', '3061000119102', \
-                '23584100782423001', '431481001', '1362941000000102', \
-                '860381000000107', '237067000', '279032003', '128200000', \
-                '36630001', '49218002', '279039007', '68962001','22253000', \
-                '10601006', '76948002', '30077003']",
-            "generalised_anxiety": "[indication = '21897009', \
-                '836551000000102', '445455005']",
-            "insomnia": "[indication = '272025006', '44186003', '440313002', \
-                '83157008', '59050008', '326781000000101', '41975002', \
-                '162204000', '67233009', '192454004', '191997003', '39898005', \
-                '193462001', '268652009']",
-            "mild_depression": "[indication =  '310495003', '87512008', \
-                '79298009', '237349002', '231504006', '191610000']",
-            "moderate_depression": "[indication = '310496002', '832007', \
-                '15639000']",
-            "nerve_pain": "[indication = '103014001', '11679003', '16269008', \
-                '103015000']",
-            "neuropathic_pain": "[indication = '762602002', '944141000000108' \
-                '247398009', '279981003', '810601000000106']",
-            "panic_disorder": "[indication = '191722009', '61569007', \
-                '225624000', '371631005', '450356003']",
-            "ocd": "indication = '191736004'",
-            "personality_disorder": "[indication = '76105009', '26665006', \
-                '231528008', '37746008', '20010003', '442057004', '473456000 \
-                '84466009', '1084061000000106', '943161000000107', '44376007' \
-                '191496002', '191772006', '191765005', '231527003', '55341008' \
-                '191753006', '191773001', '268633003', '231525006', \
-                '191774007', '31611000', '80711002', '473457009', '1376001', \
-                '36217008', '13601005', '44966003', '33449004', '231530005', \
-                '268634009', '52954000', '31027006', '273844008']",
-            "psychotic_depression": "indication = '191676002'",
-            "restlessness_and_agitation": "indication = '274647009'",
-            "sciatica": "[indication = '247366003', '307176005', 273206005', \
-                '307177001', '202794004', '311804006', '23056005']",
+            "other": "DEFAULT",
+            "acute_pain": """274663001""",
+            "alcohol_withdrawal": """386449006""",
+            "body_dysmorphic_disorder": """83482000""",
+            "chronic_depression": """192080009 OR 161891005 OR 134407002 OR \
+                736464002 OR 274665008 OR 278860009 OR 144951000000106 OR \
+                735644008 OR 3061000119102 OR 23584100782423001 OR 431481001 \
+                OR 1362941000000102 OR 860381000000107 OR 237067000 OR \
+                279032003 OR 128200000 OR 36630001 OR 49218002 OR 279039007 OR \
+                68962001 OR 22253000 OR 10601006 OR 76948002 OR 30077003""",
+            "generalised_anxiety": """21897009 OR 836551000000102 OR \
+                445455005""",
+            "insomnia": """272025006 OR 44186003 OR 440313002 OR 83157008 OR \
+                59050008 OR 326781000000101 OR 41975002 OR 162204000 OR \
+                67233009 OR 192454004 OR 191997003 OR 39898005 OR \
+                193462001 OR 268652009""",
+            "mild_depression": """310495003 OR 87512008 OR 79298009 OR \
+                237349002 OR 231504006 OR 191610000""",
+            "moderate_depression": """310496002 OR 832007 OR 15639000""",
+            "nerve_pain": """103014001 OR 11679003 OR 16269008 OR 103015000""",
+            "neuropathic_pain": """762602002 OR 944141000000108 OR 247398009 \
+                OR 279981003 OR 810601000000106""",
+            "panic_disorder": """191722009 OR 61569007 OR 225624000 OR \
+                371631005 OR 450356003""",
+            "ocd": """191736004""",
+            "personality_disorder": """76105009 OR 26665006 OR 231528008 OR \
+                37746008 OR 20010003 OR 442057004 OR 473456000 OR 84466009 OR \
+                1084061000000106 OR 943161000000107 OR 44376007 OR 191496002 \
+                OR 191772006 OR 191765005 OR 231527003 OR 55341008 OR \
+                191753006 OR 191773001 OR 268633003 OR 231525006 OR 191774007 \
+                OR 31611000 OR 80711002 OR 473457009 OR 1376001 OR 36217008 \
+                OR 3601005 OR 44966003 OR 33449004 OR 231530005 OR 268634009 \
+                OR 52954000 OR 31027006 OR 273844008""",
+            "psychotic_depression": """191676002""",
+            "restlessness_and_agitation": """274647009""",
+            "sciatica": """247366003 OR 307176005 OR 273206005 OR 307177001 OR \
+                202794004 OR 311804006 OR 23056005""",
         },
         return_expectations={
             "category": {
                 "ratios": {
-                    "0": 0.02,
-                    "acute_pain": 0.07,
-                    "alcohol_withdrawal": 0.07,
-                    "body_dysmorphic_disorder": 0.08,
-                    "chronic_depression": 0.08,
-                    "generalised_anxiety": 0.08,
-                    "mild_depression": 0.08,
-                    "moderate_depression": 0.04,
-                    "nerve_pain": 0.08,
-                    "neuropathic_pain": 0.04,
-                    "panic_disorder": 0.08,
-                    "ocd": 0.08,
+                    "other": 0.06,
+                    "acute_pain": 0.06,
+                    "alcohol_withdrawal": 0.06,
+                    "body_dysmorphic_disorder": 0.06,
+                    "chronic_depression": 0.06,
+                    "generalised_anxiety": 0.06,
+                    "insomnia": 0.06,
+                    "mild_depression": 0.06,
+                    "moderate_depression": 0.06,
+                    "nerve_pain": 0.06,
+                    "neuropathic_pain": 0.06,
+                    "panic_disorder": 0.06,
+                    "ocd": 0.06,
                     "personality_disorder": 0.06,
                     "psychotic_depression": 0.06,
-                    "restlessness_and_agitation": 0.04,
-                    "sciatica": 0.04,
+                    "restlessness_and_agitation": 0.05,
+                    "sciatica": 0.05,
                 }
             },
-            "incidence": 0.2,
         },  
     ),
 )
+# print(indications)
