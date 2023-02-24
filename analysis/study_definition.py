@@ -91,3 +91,12 @@ study = StudyDefinition(
     ** indication_variables,
     ** medication_variables
 )
+
+measures = [
+        Measure(
+        id="dfm_medications_rate",
+        numerator="research_population",
+        denominator="population",
+        group_by="medication",
+    ),
+]
