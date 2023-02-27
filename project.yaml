@@ -11,7 +11,7 @@ actions:
         cohort: output/input*.csv
 
   generate_outputs:
-    run: python:latest python analysis/check_outputs.py
+    run: python:latest python analysis/clean_outputs.py
     needs: [generate_study_population]
     outputs: 
       moderately_sensitive:
