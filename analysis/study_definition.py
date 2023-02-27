@@ -22,7 +22,9 @@ study = StudyDefinition(
         "incidence": 0.2,
     },
 
-    population=patients.all(),
+    population=patients.registered_as_of(
+            "index_date",
+        ),
 
     ** demographic_variables,
 
