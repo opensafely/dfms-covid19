@@ -60,7 +60,7 @@ study = StudyDefinition(
             between=["index_date", "last_day_of_month(index_date)"],
         ),
     ),
-    with_indications=patients.with_these_clinical_events(
+    with_indication=patients.with_these_clinical_events(
         ind_codes,
         find_last_match_in_period=True,
         between=["index_date", "last_day_of_month(index_date)"],
@@ -72,13 +72,29 @@ study = StudyDefinition(
         gp_consultations,
         find_last_match_in_period=True,
         between=["index_date", "last_day_of_month(index_date)"],
+        returning="binary_flag",
+        return_expectations={
+        },
+    ),
+    count_consultation=patients.with_these_clinical_events(
+        gp_consultations,
+        find_last_match_in_period=True,
+        between=["index_date", "last_day_of_month(index_date)"],
         returning="number_of_matches_in_period",
         return_expectations={
             "int": {"distribution": "poisson", "mean": 3},
-            "incidence": 0.25,
+            "incidence": 0.75,
         },
     ),
-    has_social_prescribing=patients.with_these_clinical_events(
+    with_social_prescribing=patients.with_these_clinical_events(
+        socialrx_codes,
+        find_last_match_in_period=True,
+        between=["index_date", "last_day_of_month(index_date)"],
+        returning="binary_flag",
+        return_expectations={
+        },
+    ),
+    count_social_prescribing=patients.with_these_clinical_events(
         socialrx_codes,
         find_last_match_in_period=True,
         between=["index_date", "last_day_of_month(index_date)"],
@@ -94,9 +110,47 @@ study = StudyDefinition(
 
 measures = [
         Measure(
-        id="dfm_medications_rate",
+        id=f"dfm_medications_by_{d}_rate",
         numerator="research_population",
         denominator="population",
-        group_by="medication",
+        group_by=[d],
+    )
+    for d in demographic_variables.keys()  
+] + [
+    Measure(
+        id="dfm_medications_grouped_rate",
+        numerator="research_population",
+        denominator="population",
+        group_by=["medication"],
+    ),
+    Measure(
+        id="dfm_indications_grouped_rate",
+        numerator="research_population",
+        denominator="population",
+        group_by=["indication"],
+    ),
+    Measure(
+        id="social_prescribing_rate",
+        numerator="with_social_prescribing",
+        denominator="population",
+        group_by=["research_population"],
+    ),
+    Measure(
+        id="gp_consultation_rate",
+        numerator="with_consultation",
+        denominator="population",
+        group_by=["research_population"],
+    ),
+    Measure(
+        id="indication_rate",
+        numerator="with_indication",
+        denominator="population",
+        group_by=["research_population"],
+    ),
+    Measure(
+        id="compare_socialrx_v_consultation_rate",
+        numerator="research_population",
+        denominator="population",
+        group_by=["indication", "with_social_prescribing", "with_consultation"],
     ),
 ]
