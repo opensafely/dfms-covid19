@@ -155,6 +155,12 @@ measures = [
         group_by=["research_population"],
     ),
     Measure(
+        id="medication_rate",
+        numerator="with_medication",
+        denominator="population",
+        group_by=["research_population"],
+    ),
+    Measure(
         id="compare_socialrx_v_consultation_rate",
         numerator="research_population",
         denominator="population",
