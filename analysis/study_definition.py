@@ -48,6 +48,9 @@ study = StudyDefinition(
         on_dfm=patients.with_these_medications(
             dfm_codes,
             between=["index_date", "last_day_of_month(index_date)"],
+            return_expectations={
+                "incidence": 1,
+                },
         ),
         hematological_cancer=patients.with_these_clinical_events(
             haemcan_codes,
@@ -68,6 +71,7 @@ study = StudyDefinition(
         between=["index_date", "last_day_of_month(index_date)"],
         returning="binary_flag",
         return_expectations={
+            "incidence": 0.8,
         },
     ),
     with_consultation=patients.with_these_clinical_events(
@@ -76,6 +80,7 @@ study = StudyDefinition(
         between=["index_date", "last_day_of_month(index_date)"],
         returning="binary_flag",
         return_expectations={
+            "incidence": 0.75,
         },
     ),
     count_consultation=patients.with_these_clinical_events(
