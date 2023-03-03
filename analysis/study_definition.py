@@ -185,6 +185,6 @@ measures = [
         id="compare_socialrx_v_consultation_rate",
         numerator="research_population",
         denominator="population",
-        group_by=["with_social_prescribing", "with_consultation"],
+        group_by=["with_social_prescribing", "with_consultation", "with_medication"],
     ),
 ]
