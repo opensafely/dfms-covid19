@@ -170,9 +170,21 @@ measures = [
         group_by=["research_population"],
     ),
     Measure(
+        id="gp_consultation_with_indication_rate",
+        numerator="research_population",
+        denominator="population",
+        group_by=["indication", "with_consultation"],
+    ),
+    Measure(
+        id="social_prescribing_with_indication_rate",
+        numerator="research_population",
+        denominator="population",
+        group_by=["indication", "with_social_prescribing"],
+    ),
+    Measure(
         id="compare_socialrx_v_consultation_rate",
         numerator="research_population",
         denominator="population",
-        group_by=["indication", "with_social_prescribing", "with_consultation"],
+        group_by=["with_social_prescribing", "with_consultation"],
     ),
 ]
