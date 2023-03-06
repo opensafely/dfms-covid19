@@ -131,6 +131,14 @@ measures = [
         denominator="population",
         group_by=[d],
     )
+    for d in demographic_variables.keys()
+] + [
+        Measure(
+        id=f"compare_medications_by_{d}_socialrx_v_consultation_rate",
+        numerator="research_population",
+        denominator="population",
+        group_by=[d,"with_social_prescribing", "with_consultation", "with_medication"],
+    )
     for d in demographic_variables.keys()  
 ] + [
     Measure(
