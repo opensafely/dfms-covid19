@@ -36,7 +36,7 @@ demographic_variables = dict(
     sex=patients.sex(
         return_expectations={
             "rate": "universal",
-            "category": {"ratios": {"M": 0.49, "F": 0.51}},
+            "category": {"ratios": {"M": 0.44, "F": 0.46, "I": 0.05, "U": 0.05}},
         }
     ),
     # Index of Multiple Deprivation (IMD)
