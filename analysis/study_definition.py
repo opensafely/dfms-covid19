@@ -26,33 +26,26 @@ study = StudyDefinition(
 
     population=patients.satisfying(
         """
-        registered = 1
+        registered
         AND NOT has_died
         AND age <= 120
         """,
-        registered=patients.registered_as_of(
-            "index_date",
-        ),
-        has_died=patients.died_from_any_cause(
-            on_or_before="index_date",
-            returning="binary_flag",
-        ),
     ),
 
     research_population=patients.satisfying(
         """
-        research_registered = 1
-        AND NOT research_has_died
+        registered
+        AND NOT has_died
         AND age <= 120
         AND on_dfm
         AND NOT hematological_cancer
         AND NOT lung_cancer
         AND NOT other_cancer
         """,
-        research_registered=patients.registered_as_of(
+        registered=patients.registered_as_of(
             "index_date",
         ),
-        research_has_died=patients.died_from_any_cause(
+        has_died=patients.died_from_any_cause(
             on_or_before="index_date",
             returning="binary_flag",
         ),
