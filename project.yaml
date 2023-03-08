@@ -16,3 +16,12 @@ actions:
     outputs: 
       moderately_sensitive:
         measure_csv: output/measure_*_rate.csv
+
+  generate_report:
+    run: jupyter:latest jupyter nbconvert /workspace/analysis/report*.ipynb --execute --to html --template basic --output-dir=/workspace/output --ExecutePreprocessor.timeout=86400 --no-input
+    needs: [generate_measures]
+    outputs:
+      moderately_sensitive:
+        notebook: output/report*.html
+        plots: output/*.png
+        tables: output/*.csv
