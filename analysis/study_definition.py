@@ -69,7 +69,7 @@ study = StudyDefinition(
             between=["index_date", "last_day_of_month(index_date)"],
         ),
     ),
-    with_medication=patients.with_these_clinical_events(
+    with_medication=patients.with_these_medications(
         dfm_codes,
         find_last_match_in_period=True,
         between=["index_date", "last_day_of_month(index_date)"],
