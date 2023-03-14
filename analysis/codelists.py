@@ -62,7 +62,7 @@ dfm_zdrugs = codelist_from_csv(
 
 # Indications for prescribing dependence forming medications
 ind_codes = codelist_from_csv(
-    "codelists/user-RachelS99-indications-for-dependency-forming-medications.csv",
+    "codelists/user-RachelS99-indications-for-dependency-medications.csv",
     system="snomed",
 )
 

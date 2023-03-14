@@ -63,7 +63,9 @@ code,term
 10586006,Occupation-related stress disorder
 10601006,Pain in lower limb
 107401000119105,Acute postoperative pain
+10741871000119101,Alcohol dependence in pregnancy
 10743001000119103,Anxiety disorder in mother complicating childbirth
+10755041000119100,Alcohol dependence in childbirth
 1075631000119107,Pain of right sternoclavicular joint
 1075651000119101,Pain of left sternoclavicular joint
 10760581000119104,Pain in round ligament in pregnancy
@@ -79,6 +81,7 @@ code,term
 1086671000000101,"Reactive depression, single episode"
 1086681000000104,"Reactive depression, recurrent"
 1086691000000102,"Reactive depression, first episode"
+1087451000000109,Late onset alcohol-induced psychosis
 1088111000000102,Backache without recent injury
 1089331000000100,Painful and cold lower leg
 1089341000000109,Painful and cold foot
@@ -120,6 +123,8 @@ code,term
 1144992001,Fear of cancer of urinary system
 11458009,"Anticipatory anxiety, mild"
 1149085006,Satisfied with management of pain
+1149333003,Acute alcohol intoxication
+1153338005,Osteonecrosis caused by alcohol
 1153570009,Treatment resistant depression
 1153575004,Persistent depressive disorder
 1156105001,Pain in sacrum
@@ -136,6 +141,7 @@ code,term
 11892641000119101,Chronic female pelvic pain syndrome
 11941006,"Panic disorder with agoraphobia, agoraphobic avoidance in full remission AND panic attacks in full remission"
 1197719006,Functional abdominal pain of childhood
+1197724009,Duodenal ulcer caused by alcohol
 1197734000,Chronic proctalgia
 11996521000119103,Pain of amputation stump of left upper limb
 11996561000119108,Pain of amputation stump of left lower limb
@@ -153,8 +159,19 @@ code,term
 122711000119109,Hypnic headache
 122731000119104,Primary thunderclap headache
 122751000119105,Acute posttraumatic headache
+1231846001,Psychosis caused by ethanol
 12336008,Referred otalgia
+1234750000,Dilated cardiomyopathy caused by ethanol
+1234767007,Duodenitis caused by ethanol
+1234772003,Neurological disorder caused by ethanol
+1234774002,Cognitive impairment caused by ethanol
+1234776000,Sleep disorder caused by ethanol
+1234778004,Steatohepatitis caused by ethanol
+1234779007,Mood disorder caused by ethanol
+1234780005,Mood disorder with mixed manic and depressive symptoms caused by ethanol
+1234781009,Mood disorder with manic symptoms caused by ethanol
 1234782002,Mood disorder with depressive symptoms caused by ethanol
+1234783007,Organic mental disorder caused by ethanol
 12349003,Danforth's sign
 1236867000,Pain due to dental trauma
 12398201000119102,Anxiety disorder caused by methamphetamine
@@ -184,10 +201,14 @@ code,term
 1325321000000108,Anxiety related to clinical environment
 133121000119109,Severe seasonal affective disorder
 13322008,Postseizure headache
+133301000119102,Degenerative brain disorder caused by alcohol
 133731000119108,Chronic pain in male pelvis
 13438001,Overanxious disorder of childhood
 134407002,Chronic back pain
+135301000119103,Parasomnia caused by alcohol
 135311000119100,Insomnia caused by alcohol
+135321000119107,Hypersomnia caused by alcohol
+135331000119105,Disorder of sleep-wake cycle caused by alcohol
 135860001,Exacerbation of backache
 135876005,Mastalgia of puberty
 13601005,Paranoid personality disorder
@@ -210,6 +231,7 @@ code,term
 144961000000109,Mechanical neck pain
 145611000119107,Allergic migraine
 145621000146106,Headache due to exertion
+15167005,Alcohol abuse
 15193003,"Severe recurrent major depression with psychotic features, mood-incongruent"
 15629941000119104,Left inguinal pain
 15629981000119109,Right inguinal pain
@@ -335,9 +357,15 @@ code,term
 175004,Supraorbital neuralgia
 17974002,Post-herpetic trigeminal neuralgia
 1816003,"Panic disorder with agoraphobia, severe agoraphobic avoidance AND mild panic attacks"
+18653004,Alcohol intoxication delirium
 18818009,Moderate recurrent major depression
 18876004,Pain in finger
 19057007,Status anginosus
+191471000,Korsakov's alcoholic psychosis with peripheral neuritis
+191475009,Chronic alcoholic brain syndrome
+191476005,Alcohol withdrawal hallucinosis
+191478006,Alcoholic paranoia
+191480000,Alcohol withdrawal syndrome
 191495003,Depressive disorder caused by drug
 191496002,Personality disorder caused by drug
 191559008,Latent schizophrenia
@@ -375,6 +403,12 @@ code,term
 191772006,Eccentric personality disorder
 191773001,Immature personality disorder
 191774007,Masochistic personality disorder
+191811004,Continuous chronic alcoholism
+191812006,Episodic chronic alcoholism
+191813001,Chronic alcoholism in remission
+191882002,"Nondependent alcohol abuse, continuous"
+191883007,"Nondependent alcohol abuse, episodic"
+191884001,Nondependent alcohol abuse in remission
 191977008,Psychogenic dysmenorrhea
 191997003,Persistent insomnia
 192014006,Psychogenic rumination
@@ -392,8 +426,10 @@ code,term
 192454004,Nonorganic insomnia
 192527004,Elaboration of physical symptoms for psychological reasons
 192611004,Childhood phobic anxiety disorder
+192811002,Alcoholic encephalopathy
 193028008,Sick headache
 193030005,Migraine variants
+19303008,Alcohol myopathy
 193031009,Cluster headache syndrome
 193039006,Complicated migraine
 193183000,Acute painful neuropathy due to diabetes mellitus
@@ -448,11 +484,15 @@ code,term
 203508001,Bony pelvic pain
 203509009,Clavicle pain
 20361002,Alteration in comfort: pain
+2043009,Alcoholic gastritis
 20502007,Pain in scrotum
+205788004,Fetal alcohol syndrome
+205791004,Fetal or neonatal effect of maternal use of alcohol
 20734000,Psychologic conversion disorder
 207363009,Anxiety neurosis
 20793008,Scapulalgia
 21005005,Burning epigastric pain
+21007002,Wernicke's disease
 213134006,Pain due to internal prosthetic device
 213299007,Postoperative pain
 2134003,Diffuse pain
@@ -461,6 +501,9 @@ code,term
 21545007,Tenalgia
 21615003,Autonomic facial cephalgia
 21621000119107,Pain in female perineum
+216633005,Accidental poisoning caused by alcoholic beverage
+216635003,Accidental poisoning caused by denatured alcohol
+216636002,Accidental poisoning caused by methylated spirit
 2177002,Postherpetic neuralgia
 21897009,Generalized anxiety disorder
 22230001,"Panic disorder with agoraphobia, agoraphobic avoidance in partial remission AND panic attacks in full remission"
@@ -484,6 +527,7 @@ code,term
 225643000,Anxiety about making mistakes
 225644006,Anxiety about altered body image
 22621000119103,Anxiety disorder caused by drug
+230353003,Morel laminar sclerosis
 230461009,Headache disorder
 230462002,Migraine with typical aura
 230464001,Non-familial hemiplegic migraine
@@ -513,6 +557,7 @@ code,term
 230597003,Intercostal post-herpetic neuralgia
 230648001,Abdominal cutaneous nerve entrapment syndrome
 230654000,Painful legs and moving toes
+230800004,Alcoholic coma
 23096007,Cranial neuralgia
 231445001,Organic dissociative disorder
 231452004,Limbic epilepsy personality syndrome
@@ -520,6 +565,7 @@ code,term
 231454003,Organic pseudopsychopathic personality
 231455002,Organic pseudoretarded personality
 231456001,Postleucotomy syndrome
+231467000,Absinthe addiction
 231485007,Post-schizophrenic depression
 231488009,Delusional pain
 231499006,Endogenous depression first episode
@@ -545,7 +591,14 @@ code,term
 233819005,Stable angina
 233821000,New onset angina
 233845001,Cardiac syndrome X
+234341005,Alcohol-related macrocytosis
+234366009,Alcohol-related sideroblastic anemia
 235841007,Chronic nonspecific abdominal pain
+235875008,Alcoholic hepatitis
+235880004,Alcoholic fibrosis and sclerosis of liver
+235881000,Alcoholic hepatic failure
+235942001,Alcohol-induced acute pancreatitis
+235952002,Alcohol-induced chronic pancreatitis
 236554001,Pain during inflow of dialysate
 236555000,Pain during outflow of dialysate
 237067000,Chronic pain in female pelvis
@@ -555,6 +608,8 @@ code,term
 237454007,Non-cyclical mastalgia
 237455008,Trigger point mastalgia
 237477007,Pain caused by breast implant
+237641009,Alcohol-induced hypoglycemia
+237738005,Alcohol-induced pseudo-Cushing's syndrome
 238965007,Venereophobia
 238966008,Syphilophobia
 238968009,Vulvodynia
@@ -659,6 +714,7 @@ code,term
 251000119105,"Severe major depression, single episode"
 25416002,Peripheral neuralgia
 25501002,Social phobia
+25702006,Alcohol intoxication
 25922000,"Major depressive disorder, single episode with postpartum onset"
 26150009,Lower half migraine
 2618002,Chronic recurrent major depressive disorder
@@ -678,6 +734,7 @@ code,term
 268621008,Recurrent major depressive episodes
 268633003,Introverted personality disorder
 268634009,Psychoneurotic personality disorder
+268645007,Nondependent alcohol abuse
 268652009,Transient insomnia
 268669006,Childhood and adolescent disturbance with elective mutism
 268715000,Dissociative motor disorder
@@ -739,6 +796,7 @@ code,term
 277834005,Anxiety about having a heart attack
 277838008,Anxiety about appearing ridiculous
 277839000,Anxiety about saying the wrong thing
+278363000,Alcoholic macrocytosis
 278860009,Chronic low back pain
 278862001,Acute low back pain
 279001004,Pain finding at anatomical site
@@ -802,12 +860,14 @@ code,term
 280945000,Derealization syndrome
 280947008,Examination phobia
 281000119103,Severe recurrent major depression
+281004,Dementia associated with alcoholism
 281245003,Musculoskeletal chest pain
 28221000119103,Abdominal muscle pain
 282359006,Post-vasectomy epididymal pain
 282360001,Persistent testicular pain
 282743009,Malignant bone pain
 284514000,Continuously shifting in seat
+284591009,Persistent alcohol abuse
 28475009,Severe recurrent major depression with psychotic features
 285339000,Painful tooth socket
 285365001,Pain in toe
@@ -823,6 +883,9 @@ code,term
 287046004,Pain in right arm
 287047008,Pain in left lower limb
 287048003,Pain in right lower limb
+287166006,Accidental poisoning with ethyl alcohol
+288021000119107,Disorder due to alcohol abuse
+288031000119105,Alcohol induced disorder co-occurrent and due to alcohol dependence
 288081000119106,"Behavioral insomnia of childhood, combined type"
 288091000119109,"Behavioral insomnia of childhood, limit setting type"
 288101000119104,"Behavioral insomnia of childhood, sleep onset association type"
@@ -854,6 +917,7 @@ code,term
 292491000119101,Neuralgia of left pudendal nerve
 292521000119104,Neuralgia of nerve of right lower limb
 292531000119101,Neuralgia of nerve of left lower limb
+292881006,Industrial methylated spirit adverse reaction
 29330004,Salivary colic
 293921000119104,Complex regional pain syndrome type I of bilateral upper limbs
 293931000119101,Complex regional pain syndrome type I of left lower limb
@@ -906,6 +970,7 @@ code,term
 300954003,Pain in calf
 300955002,Pain in thumb
 300957005,Postural low back pain
+300992002,Alcohol-induced cerebellar ataxia
 300995000,Exercise-induced angina
 301201000119105,Repetitive motion disorder of left lower leg
 301281000119102,Repetitive motion disorder of right lower leg
@@ -958,6 +1023,8 @@ code,term
 307199009,Psychosomatic abdominal pain
 307225003,Perianal pain
 30731004,Glossodynia
+307757001,Chronic alcoholic hepatitis
+308692003,Alcohol-induced flushing
 309737007,Abdominal pain in pregnancy
 309765009,Pain due to hip joint prosthesis
 309767001,Pain due to knee joint prosthesis
@@ -976,6 +1043,7 @@ code,term
 314041007,Abdominal pain in early pregnancy
 314116003,Post infarct angina
 314212008,Abdominal pain - cause unknown
+314539001,Alcohol related optic neuropathy
 314642004,Intermittent pain
 314716005,Acute pelvic pain
 31490007,Nasociliary neuralgia
@@ -1028,6 +1096,9 @@ code,term
 3586005,Psychogenic fugue
 35928006,Nocturnal angina
 36031001,Burning feet
+361268000,Alcohol-induced epilepsy
+361272001,Cerebellar ataxia due to alcoholism
+361273006,Alcoholic cerebellar degeneration
 36163009,Night pain
 36170009,Secondary dysthymia late onset
 36217008,Organic personality disorder
@@ -1070,7 +1141,6 @@ code,term
 38433004,No sensitivity to pain
 38451003,Primary dysthymia early onset
 38617005,Dental phobia
-386449006,Substance use treatment: alcohol withdrawal
 38654001,Recurrent biliary colic
 386808001,Phobia
 386810004,Phobic disorder
@@ -1088,6 +1158,7 @@ code,term
 398058003,Pain during regional anesthesia for cesarean section
 39809009,Recurrent major depressive disorder with catatonic features
 398126006,Muscular headache
+39898005,Sleep disorder
 398987004,Headache following lumbar puncture
 399194009,Disorder characterized by back pain
 401010000,Patient concerned about eyesight
@@ -1113,6 +1184,7 @@ code,term
 41021005,Psychologic dyspareunia
 410720000,Pain by sensation quality
 41226008,Exquisite pain
+41309000,Alcoholic liver damage
 41321000119101,Myofascial pain syndrome of thoracic spine
 41334000,"Angina, class II"
 41413006,Temporal headache
@@ -1125,6 +1197,7 @@ code,term
 418237007,Pain in hallux
 418958006,Complaining of backache
 41975002,Insomnia with sleep apnea
+420054005,Alcoholic cirrhosis
 421833007,Finding of pain sense
 422136003,Neuralgia with acquired immunodeficiency syndrome
 423279000,Refractory migraine without aura
@@ -1207,6 +1280,7 @@ code,term
 429492007,Pain relief by sitting up
 429531000,Pain on passive stretch of joint
 429559004,Typical angina
+429571005,Sleep-related dissociative disorder
 429629001,Pain relief by antacid
 429742007,Pain onset during moderate exercise
 4306003,Cluster B personality disorder
@@ -1228,6 +1302,7 @@ code,term
 438506002,Visceral abdominal pain
 43922008,Jaw claudication
 439469002,Recurrent abdominal pain
+44047000,Zieve's syndrome
 441711008,Chronic psychogenic pain
 442057004,Chronic depressive personality disorder
 442183006,Psychogenic dyskinesia
@@ -1244,6 +1319,7 @@ code,term
 444899003,Pain in forearm
 445322004,Migraine variant with headache
 44538002,Nasal headache
+445507008,Inflammation of pancreas caused by alcohol
 445511002,Orthostatic headache
 446175003,Acute posttraumatic stress disorder following military combat
 446180007,Delayed posttraumatic stress disorder following military combat
@@ -1283,6 +1359,7 @@ code,term
 4969004,Sinus headache
 49986002,Central pain
 50026000,Organic anxiety disorder caused by psychoactive substance
+50325005,Alcoholic fatty liver
 50415004,Moderate pain
 50510006,Painful piezogenic pedal papules
 50745000,Hemianalgesia
@@ -1334,6 +1411,9 @@ code,term
 608831003,Thoracic discogenic pain
 608832005,Lumbar discogenic pain
 609143007,Elongated styloid process syndrome
+609437000,Fetal Alcohol Spectrum Disorder
+609438005,Fetal or neonatal effect of maternal alcohol addiction
+61144001,Alcohol-induced psychotic disorder with delusions
 61157009,Combat fatigue
 61212007,"Panic disorder with agoraphobia, severe agoraphobic avoidance AND severe panic attacks"
 61387006,Moderate anxiety
@@ -1362,6 +1442,7 @@ code,term
 6617009,Referred pain
 66344007,Recurrent major depression
 66551002,Psychogenic headache
+66590003,Alcohol dependence
 66695004,Acrodynia due to mercury poisoning
 67062000,Terminal insomnia
 67195008,Acute stress disorder
@@ -1377,7 +1458,9 @@ code,term
 69392006,"Major depressive disorder, single episode with catatonic features"
 69403006,Conversion aphonia
 69479009,Anxiety hyperventilation
+69482004,Korsakoff's psychosis
 698006004,Pulpalgia
+698321001,Neonatal effect of alcohol transmitted via breast milk
 698690001,Avoidant personality disorder in remission
 698699000,Antisocial personality disorder in remission
 698700004,Borderline personality disorder in remission
@@ -1386,6 +1469,7 @@ code,term
 698952009,Dissociative disorder in remission
 698957003,Depressive disorder in remission
 699046000,Craniofacial pain
+699208000,Thrombocytopenia caused by alcohol
 699241002,Chronic post-traumatic stress disorder following military combat
 699314009,Migraine with persistent visual aura
 699682009,Localized masticatory muscle soreness
@@ -1398,6 +1482,7 @@ code,term
 703619001,Pelvic girdle pain
 704675005,Inadequate pain control
 704677002,Tarsalgia
+7052005,Alcohol hallucinosis
 706883004,Pain due to varicose veins of lower extremity
 70691001,Agoraphobia
 706955002,Pain relieved by analgesic
@@ -1428,20 +1513,25 @@ code,term
 712857000,Segmental neuralgia as late effect of traumatic injury
 71303008,Atypical facial pain
 71315007,Dyspareunia
+713181003,Chronic alcoholic liver disease
 713278001,Neuralgia co-occurrent with human immunodeficiency virus infection
 71336009,Recurrent major depressive disorder with postpartum onset
+713370005,Acute on chronic alcoholic liver disease
 713410003,Pain following cerebrovascular accident
 713412006,Ischemic foot with rest pain
 713413001,Joint pain of pelvic region
+713583005,Mild alcohol dependence
 713674006,Ischemic foot pain when walking
 713829001,Postinfective intercostal neuralgia
 713831005,Postinfective peripheral neuralgia
 713837009,Postinfective segmental peripheral neuralgia
 713839007,Intercostal neuralgia as late effect of trauma
 713847007,Post-surgery obturator neuralgia
+713862009,Severe alcohol dependence
 713889004,Atypical odontalgia
 71393004,Soreness
 714252004,Post-mastectomy chronic pain syndrome
+714829008,Moderate alcohol dependence
 717253001,Drilling quality pain
 71760005,Cervico-occipital neuralgia
 717717002,Non-cyclic pelvic pain
@@ -1452,12 +1542,15 @@ code,term
 71959007,Elective mutism
 719592004,Moderately severe major depression
 719593009,Moderately severe depression
+719848005,Disorder caused by alcohol
+7200002,Alcoholism
 720451004,Minimal recurrent major depression
 720452006,Moderately severe recurrent major depression
 720453001,Moderately severe major depression single episode
 720454007,Minimal major depression single episode
 720455008,Minimal major depression
 721156008,Cyclic pelvic pain
+721710005,Fibrosis of liver caused by alcohol
 722829006,Acute pain of scrotum
 722842006,Fear of having digestive disease
 722843001,Fear of having cancer of digestive system
@@ -1470,6 +1563,7 @@ code,term
 723087000,Fear of cardiovascular disease
 723092003,Fear of respiratory disease
 723093008,Fear of cancer of respiratory system
+723103002,Gastric ulcer caused by alcohol
 723112000,Fear of endocrine disease
 723113005,Fear of metabolic disease
 723114004,Fear of nutritional disease
@@ -1483,6 +1577,8 @@ code,term
 723316007,Electric shock type pain
 723913009,Olfactory reference disorder
 723915002,Secondary dissociative disorder
+723926008,Perceptual disturbances and seizures co-occurrent and due to alcohol withdrawal
+723927004,Psychotic disorder caused by alcohol with schizophreniform symptoms
 724429004,Stroke co-occurrent with migraine
 724448000,Fear of genital disease
 724449008,Fear of breast disease
@@ -1513,6 +1609,7 @@ code,term
 72771000119107,Postpartum episiotomy pain
 72861004,Panic disorder without agoraphobia with mild panic attacks
 73063007,Colicky pain
+73097000,Alcohol amnestic disorder
 733826000,Pain due to fracture
 734947007,Complex regional pain syndrome type I
 734986006,Complex regional pain syndrome of lower limb
@@ -1668,6 +1765,7 @@ code,term
 788912006,Dissociative neurological symptom disorder co-occurrent with tremor
 789494008,Central sensitization
 791000119109,Angina due to type 2 diabetes mellitus
+7916009,Alcoholic polyneuropathy
 7921000119104,Anterior pleuritic pain
 79267007,Retinal migraine
 792844003,Limb pain at rest due to atherosclerosis of artery of lower limb
@@ -1688,12 +1786,14 @@ code,term
 81712001,Pain in female genitalia on intercourse
 8185002,Panic disorder with agoraphobia AND moderate panic attacks
 81953000,Chest pain on exertion
+82047000,Diarrhea caused by alcohol intake
 82218004,Postoperative depression
 82339009,Anxiety disorder caused by amfetamine
 82415003,Agoraphobia without history of panic disorder without limited symptom attacks
 82423001,Chronic pain
 82494000,Panic disorder without agoraphobia with panic attacks in full remission
 82738004,"Panic disorder with agoraphobia, moderate agoraphobic avoidance AND moderate panic attacks"
+82782008,Toxic effect of ethyl alcohol
 82991003,Generalized aches and pains
 830137004,Pain due to enlargement of spleen
 83132003,Upper abdominal pain
@@ -1708,6 +1808,8 @@ code,term
 83631006,"Panic disorder with agoraphobia, moderate agoraphobic avoidance AND severe panic attacks"
 83644001,Dull pain
 836711000000108,Ischaemic lower limb pain at rest
+838376007,Chronic myopathy caused by alcohol
+838386008,Acute alcoholic myopathy
 838410008,Pain in epigastric region on palpation
 838411007,Pain in abdominal region on palpation
 838412000,Pain in lumbar region on palpation
@@ -1722,10 +1824,12 @@ code,term
 85061001,"Separation anxiety disorder of childhood, early onset"
 85080004,Secondary dysthymia
 85284003,"Angina, class III"
+85561006,Uncomplicated alcohol withdrawal
 85879003,Secondary fibrositis
 86208007,Loin pain-hematuria syndrome
 86260003,Pain around eye
 86345004,Bertolotti's syndrome
+8635005,Alcohol withdrawal delirium
 865971002,Pain on tooth percussion
 865986008,Pain on application of pressure to tooth
 865987004,Pain on tooth palpation
@@ -1737,6 +1841,7 @@ code,term
 87414006,Reactive depression (situational)
 87512008,Mild major depression
 87798009,"Panic disorder with agoraphobia, agoraphobic avoidance in full remission AND moderate panic attacks"
+87810006,Megaloblastic anemia due to alcoholism
 87842000,Generalized neuromuscular exhaustion syndrome
 8799007,Posterior heel pain
 879969009,Breakthrough pain
@@ -1748,6 +1853,7 @@ code,term
 88984006,Hysterical paralysis
 89225005,Anxiety about blushing
 89323001,"Angina, class IV"
+89507002,Toxic effect of denatured alcohol
 89638008,Xiphodynia
 89751008,Sexual pain disorder
 89874002,Xiphoidalgia syndrome
@@ -1786,7 +1892,9 @@ code,term
 95794005,Tolosa-Hunt syndrome
 9626006,Mechanical pain
 97001000119106,Localized chest pain
+97571000119109,Thrombocytopenia co-occurrent and due to alcoholism
 98611000119104,Chronic post-thoracotomy pain syndrome
 98921000119102,Pain due to neoplastic disease
+9953008,Acute alcoholic liver disease
 9972008,Radiating pain
 9991008,Abdominal colic

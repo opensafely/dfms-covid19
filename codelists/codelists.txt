@@ -6,7 +6,7 @@ user/RachelS99/dependence-forming-medications-clomethiazole-dmd/62f3e6d6
 user/RachelS99/dependence-forming-medications-gabapentinoids-dmd/30d5006c
 user/RachelS99/dependence-forming-medications-opioid-pain-medicine-dmd/7eb61a01
 user/RachelS99/dependence-forming-medications-z-drugs-dmd/4c973397
-user/RachelS99/indications-for-dependency-forming-medications/3fd6be5b
+user/RachelS99/indications-for-dependency-medications/131d57dd
 user/RachelS99/social-prescribing-in-dependency/1d2b0d23
 opensafely/cancer-excluding-lung-and-haematological-snomed/2020-04-15
 nhsd-primary-care-domain-refsets/c19haemcan_cod/20210127
