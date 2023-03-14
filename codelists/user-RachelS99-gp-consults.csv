@@ -1,7 +1,107 @@
 code,term
+1068881000000101,eConsultation via online application
+113011000000100,Consultation for minor injury
+11429006,Consultation
+1144767008,Consultation in external beam radiation therapy
+1149511000000104,Group consultation
+1240451000000106,Telephone consultation for suspected severe acute respiratory syndrome coronavirus 2
+12566000,"Consultation in computer dosimetry and isodose chart, external beam radiation therapy"
+12843005,Subsequent hospital visit by physician
+1323941000000101,Group consultation via video conference
+14161000000107,Out of hours consultation at surgery
+14351000000106,Weekend consultation at surgery
+14601000000102,Bank holiday surgery consultation
+15301000,Consultation in chemotherapy
 185387006,New patient consultation
+248491000000101,Follow-up consultation for minor injury
+24882007,Medical consultation on hospital inpatient
+25028003,"Dermatology consultation and report, comprehensive"
+2530001,Chiropractic visit
+281036007,Follow-up consultation
+28191001,Consultation and report by radiologist
+30078008,"Dermatology consultation and report, brief"
+30274002,Chiropractic consultation
+31108002,Consultation for laboratory medicine
+313183009,Inappropriate use of out of hours service
+314849005,Telephone contact by consultant
+325851000000107,Consultation encounter type
 325861000000105,Face to face consultation encounter type
 325871000000103,Remote consultation encounter type
+325881000000101,Remote verbal consultation encounter type
+325891000000104,Consultation by telephone encounter type
+325901000000103,Remote non-verbal consultation encounter type
+325911000000101,Consultation via multimedia encounter type
+325921000000107,Consultation via video conference encounter type
+34043003,Dental consultation and report
+35437002,Consultation in computer dosimetry and isodose chart for brachytherapy
+35755007,Chiropractic interpretation of x-rays
+386472008,Telephone consultation
+388970003,Weight maintenance consultation
+388975008,Weight reduction consultation
+388977000,Weight increase consultation
+398228004,Anesthesia consultation
+400979004,Homeopathic consultation
+416520008,Consultation for unaccompanied minor
+420454001,Consultation for chronic pain
+420650002,Consultation for pain
+421946003,Consultation for acute pain
+423861007,Consultation for restraint debriefing
+42423000,"Chiropractic consultation, history and examination"
+428931000124102,Pharmacogenetic consultation
+44340006,Prosthodontic dental consultation and report
+448337001,Telemedicine consultation with patient
+48550003,Medical consultation on nursing facility inpatient
+49463003,Consultation for paternity case
+50687007,Digestive tract consultation and report
+520141000000108,Telephone consultation for suspected influenza A virus subtype H1N1
+53923005,Medical consultation on inpatient
+58400001,Chiropractic examination
+59000001,Surgical pathology consultation and report on referred slides prepared elsewhere
+5947002,Consultation for hearing and/or speech problem
+65263004,General radiation therapy consultation and report
+65981005,Consultation in laboratory medicine for test interpretation
+680007,Radiation physics consultation
+698307003,Consultation for benign neoplasm disease
+698308008,Consultation for malignant neoplasm disease
+698309000,Consultation for endoscopic procedure
+698310005,Consultation for colposcopy related procedure
+698311009,Consultation for assisted reproductive procedure
+698312002,Consultation for minor abdominal procedure
+698313007,Consultation for minor operation
+698314001,Consultation for treatment
+70495004,Limited consultation
+711420002,X-ray consultation
+711532000,Surgical pathology consultation on slides with comprehensive review and interpretation
+71318009,Physical medicine consultation and report
+713281006,Consultation for palliative care
+71387007,Endodontic dental consultation and report
+719407002,Remote non-verbal consultation
+719410009,Consultation via video conference
+726007,"Pathology consultation, comprehensive, records and specimen with report"
+73007006,Dermatology consultation and report
+73575006,Chiropractic consultation with history
 766841000000106,Consultation with patient encounter type
+766851000000109,Consultation with patient and representative encounter type
 766861000000107,Consultation with representative of patient encounter type
 766871000000100,Patient not present encounter type
+773298008,Dental trauma consultation and report
+77406008,Confirmatory medical consultation
+774221000000100,Consultation where patient chose not to be involved encounter type
+77965002,Consultation in brachytherapy
+788339009,Genetic consultation
+788542004,Consultation by acupuncturist
+788543009,Consultation by ergotherapist
+839551000000107,Consultation for complex sexual health need
+84251009,Comprehensive consultation
+8502007,Radiation physics consultation with therapeutic radiologist
+866203004,Consultation for asthma
+866204005,Consultation for chronic obstructive pulmonary disease
+868184008,Telemedicine consultation with provider
+87790002,Follow-up inpatient consultation visit
+89291005,Orthodontic dental consultation and report
+903001000000102,Joint consultation
+903041000000104,Joint consultation - General Practitioner registrar and General Practitioner trainer
+956781000000107,Joint consultation with practice nurse and community diabetes specialist nurse
+956921000000109,Joint consultation with General Practitioner and community diabetes specialist nurse
+978801000000107,Remote verbal consultation
+978871000000104,Consultation via multimedia
