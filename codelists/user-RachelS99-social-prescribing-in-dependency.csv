@@ -1,39 +1,344 @@
 code,term
+1024791000000107,Life coaching
+1024851000000107,Cognitive-linguistic therapy
 1037451000000103,Referral for psychological management of anxiety
 1037471000000107,Referral for psychological management of anxiety declined
+1045741000000100,Establishing valued role
 1053831000000101,Signposting to Anxiety UK
 1057311000000107,Signposting to Obsessive-Compulsive Disorder-UK
 1057321000000101,Signposting to Obsessive-Compulsive Disorder Action
 1078371000000100,Referral for health coaching
 1084281000000109,Signposting to social prescribing service
+1097161000000100,Referral for cognitive behavioural therapy for psychosis
 1107181000000104,Signposting for digital cognitive behavioural therapy for insomnia
 1107191000000102,Referral for digital cognitive behavioural therapy for insomnia
 1107201000000100,Self referral for digital cognitive behavioural therapy for insomnia
 1109721000000108,Digital cognitive behavioural therapy for insomnia
+1111811000000109,Cognitive behavioural therapy for eating disorders
 1156338001,Health coaching
+1156891004,Reinforcement of musculoskeletal exercise technique
+1157092000,Reinforcement of maintenance of physical capabilities
+133916000,Role clarification
+133917009,Bonding encouragement
+133919007,Communication of alternative technique
+133920001,Decision making encouragement
+133923004,Social interaction encouragement
 1362721000000106,Social prescribing case closed
 1362931000000106,Seen by social prescribing link worker
+1363691000000108,Behavioural family therapy
+1423361000000109,Mindfulness-based cognitive therapy
+149451000000104,Cognitive behavioural therapy for personality disorder
+149521000000105,Trauma focused cognitive behavioural therapy
+149591000000108,Group cognitive and behavioural therapy for bipolar disorder
 149631000000108,Digital cognitive behavioural therapy for depression
 166001,Behavioral therapy
+171000001,Social counseling
+171001002,Counseling about benefits
+171002009,Vocational counseling
+171003004,Counseling of employer
+171004005,Retirement counseling
+171071003,Foreign travel education
+171074006,Requires protection against malaria
+171075007,Cholera outbreak education
+171076008,Rabies outbreak education
+171077004,Meningitis outbreak education
+171078009,Malaria outbreak education
+183040005,Patient reassurance
+183041009,Parental reassurance
+183387009,Aversion therapy - behavior correction
+183388004,Aversion therapy - alcoholism
+183389007,Aversion therapy - somatic ill
+196951000000107,Social independence training
 199101000000102,Referral for guided self-help for anxiety
 199351000000104,Declined referral to physical exercise programme
 200131000000104,Cognitive behaviour therapy declined
+203331000000109,Advice on foreign travel - access to health services
+203341000000100,Advice on foreign travel - climate
+203351000000102,Advice on foreign travel - health insurance
+203361000000104,Advice on foreign travel - malaria advice
+223433009,Benefits education
+223476006,Reassuring
+223477002,Reassuring about activity
+223478007,Reassuring about procedure
+223479004,Reassuring about therapy
+223480001,Reassuring about observations
+223481002,Reassuring about a disorder
+225160006,Reinforcement of behavior
+225221000,Praising
+225222007,Giving encouragement
+225223002,Motivating patient
+225224008,Exposure - behavior therapy
+225225009,Accumulative reinforcement
+225226005,Negative reinforcement
+225227001,Positive reinforcement
+225329001,Involving family and friends in care
+225330006,Client participation
+225331005,Participative approach
+225333008,Behavior management
+225345004,Promotion of self-care
+225346003,Promotion of independence
+225347007,Empowerment
+225348002,Maintaining the client's dignity
+225349005,Respecting the client's privacy
+225350005,Showing the client respect
+225951004,Maintaining client participation
+225975004,Demonstrating tact with the client
+225976003,Demonstrating patience with the client
+225980008,Using a calm reassuring manner
+225987006,Ensuring patient's caregiver prepared for hospital discharge
+225992008,Involving client in planning care
+226011005,Respecting the client's privacy during fecal elimination
+226060000,Stress management
+228546003,Orientation training
+228548002,Concept formation training
+228550005,Attention training
+228551009,Memory retraining
+228552002,Problem solving training
+228553007,Cognitive therapy
+228555000,Rational emotive therapy
 228557008,Cognitive and behavioral therapy
+228558003,Psychosocial intervention strategy
+228559006,Social skills training
 228560001,Anxiety management training
+228572007,Time management training
+228573002,Activity scheduling
+228574008,Assertiveness training
+228575009,Reward technique
+228576005,Behavior rehearsal technique
+228577001,Role modeling technique
+228578006,Chaining technique
+228579003,Backward chaining technique
+228580000,Forward chaining technique
+228582008,Errorless learning technique
+228583003,Motivation therapy
+228584009,Projective therapy
+228585005,Role play technique
+228586006,Improvization technique
+228587002,Mime technique
+228588007,Parenting skills training
+228589004,Sibling relationships training
+228590008,Validation therapy
+228591007,Normalization therapy
+228592000,Social role valorization therapy
+228593005,Social modeling technique
 229075007,Home exercise program
 229138000,Back exercises
+229140005,Bridging exercise
+229141009,Lumbar isometric flexion exercises
+229186007,Back exercises in water
+231621000000108,Cognitive behavioural therapy by unidisciplinary team
+243118002,Professional reassurance
+243119005,Family reassurance
 276221000000100,Referred for health coaching
+278415002,Creative therapy
+301041000000107,Behaviour desensitisation therapy
+302230009,Generic cognitive behavioral therapy
+302234000,Beck's cognitive therapy
+302256002,Coping skills training
+302259009,Cognitive skills training
+302260004,Concentration skills training
+302262007,Memory skills training
+304497007,Giving encouragement to perform activity
+304498002,Giving encouragement to perform procedure
+304499005,Giving encouragement to develop skill
+304500001,Giving encouragement to discuss problems
+304501002,Giving encouragement to change routine
+304503004,Encouraging a behavior
+304511009,Reassuring about signs and symptoms
+304547005,Giving encouragement to perform activity of daily living
+304548000,Giving encouragement to perform functional activity
+304549008,Giving encouragement to exercise
+304550008,Giving encouragement to take medication
+304555003,Reassuring about functional activity
+304557006,Reassuring about activity of daily living
+304558001,Reassuring about exercise
+304637004,Cognitive restructuring
+304639001,Stress mapping
+304700003,Distraction training
+304701004,Thought-stopping training
+304888004,Understanding behavior
+304889007,Exposure technique
+305121000000103,Using therapeutic relationship
+306960006,Training relating to psychosocial functioning
+306977006,Social and personal circumstances education
+311460008,Strategy training for cognitive skills
+311461007,Strategy training for perceptual skills
+311462000,Strategy training for executive skills
+311510000,Information processing training
+311511001,Executive functions training
+311522002,Process training
+311523007,Strategy training
+311884008,External memory aids training
+312043006,Positive feedback approach
+312044000,Negative feedback approach
+313080005,Work-related counseling
+313083007,Unemployment counseling
+313084001,Redundancy counseling
+313085000,Relationship counseling
 313087008,Counseling for anxiety
+314064009,Giving encouragement to participate
+314111008,Giving encouragement to continue treatment
+350991000000102,Involving client in managing their money
+351111000000100,Promotion of self worth
+351191000000109,Promotion of self concept
+351241000000109,Promotion of self actualisation
+3518004,Aversive psychotherapy
+35358007,Token economy therapy
+36230009,"Psychologic desensitization, implosion"
+370791009,Encouragement of deep breathing and coughing exercises
+370818008,Identification of expectations of home care
+370819000,Identification of individual values and wishes concerning care
+370830002,Preoperative education including family and support persons
+370831003,Discharge planning including patient and support person
+370840004,"Maintaining and protecting the patient's autonomy, dignity, and human rights"
+370842007,Providing care in a nonprejudicial manner
+370843002,Providing care respecting the worth and dignity of the patient
+372061000,Maintaining the patient's dignity and privacy
+384605003,Complex relationship building
+384743009,Support system enhancement
+385768000,Encouragement of compliance
+385769008,Encouragement of dietary compliance
+385770009,Encouragement of fluid volume compliance
+385771008,Encouragement of compliance with medical regimen
+385772001,Encouragement of compliance with medication regimen
+385773006,Encouragement of compliance with safety precautions
+385774000,Encouragement of compliance with therapeutic regimen
+385859008,Psychosocial analysis education
+38592005,Dental behavior management
+385990006,Support system interventions
+385992003,Discipline promotion
+386222009,Body mechanics promotion
+386226007,Calming
+386241007,Cognitive stimulation
+386246002,Establishing client relationship
+386283002,Environmental management: attachment process
+386291006,Exercise promotion: strength training
+386292004,Exercise promotion: stretching
+386324008,Hope instillation
+386325009,Humor facilitation
+386331007,Impulse control training
+386342003,Kangaroo care
+386348004,Limit setting
+386367000,Mutual goal setting
+386371002,Normalization promotion
+386383000,Parenting promotion
+386384006,Pass facilitation
+386385007,Patient contracting
+386410008,Resiliency promotion
+386416002,Role enhancement
+386417006,Security enhancement
+386424007,Physician support
+386429002,Self-modification assistance
+386430007,Self-responsibility facilitation
+386442002,Socialization enhancement
+386480001,Truth telling
+386491008,Values clarification
+386494000,Visitation facilitation
+386507003,Active listening
+386516004,Anticipatory guidance
+386520000,Attachment promotion
+386522008,Overactivity/inattention behavior management
+386523003,Self-harm behavior management
+386524009,Sexual behavior management
+386525005,Social skills behavior modification
+391892008,Goal directed therapy
 401167006,Group exercise program
+405780009,Dialectical behavior therapy
+406180005,Relocation stress reduction
+408923000,Family process analysis education
+408927004,Sexual behavior analysis education
+408932003,Social network analysis education
+410112008,Compliance care management
+410115005,Management of dietary compliance
+410118007,Management of fluid volume compliance
+410121009,Management of compliance with medical regimen
+410124001,Management of compliance with medication regimen
+410130001,Management of compliance with therapeutic regimen
+410260003,Social therapy assessment
+410261004,Social therapy education
+410262006,Social therapy management
+413457006,Domestic violence education
+414039005,Distraction
 416974006,Referred for exercise program
+425680009,Cognitive behavioral therapy by multidisciplinary team
+426283007,Providing reassurance to spouse
+426312008,Providing reassurance to neighbor
+427325006,Providing reassurance to caregiver
+427345003,Providing reassurance to children
+429329005,Computerized cognitive behavioral therapy
+438651005,Promotion of self actualization
+439251009,Initiation of therapeutic relationship
+439259006,Client involvement in management of their money
+439330009,Covert sensitization
+439474005,Assistance with establishment of personal values
+439795004,Reprimanding
+439863008,Termination of therapeutic relationship
+439916005,Paradoxical intention behavior therapy
+443119008,Behavioral activation therapy
+444175001,Guided self-help cognitive behavioral therapy
+46618005,Operant conditioning
 515721000000104,Social prescribing for mental health
+51790004,Extinction therapy
 519101000000109,Referral for cognitive behavioural therapy
 526151000000109,Referral to exercise on referral programme
+53051003,Manual arts therapy
+57070007,Confrontation therapy
+68168001,Marital counseling
+698631004,Education about self-help group
+702474001,Cognitive rehabilitation therapy
+710246008,Encouragement to perform positive affirmation
+710454008,Contracting for positive behavior
+710483006,Discharge planning by family caregiver
+710497003,Establishment of rapport
+710718005,Education about family process
+710873001,Involving client in decision making process
+710919008,Provision of privacy for spiritual behavior
+710920002,Provision of privacy
+711031001,Contracting for adherence
+711033003,Reinforcement of adherence to treatment regimen
+711037002,Use of de-escalation technique
+711070007,Coordination of family conference
+711081005,Negotiation of date for cessation of smoking
+711122003,Establishment of trust
+711170009,Reinforcement of adherence to physical therapy regimen
+711283001,Cognitive behavior therapy by unidisciplinary team
+712490006,Facilitating forgiveness
+712555000,Liaising about dietary regime
+712556004,Liaising about pain management plan
+712558003,Anger management therapy
+713073001,Giving encouragement to set limits
+713100000,Education about diversional therapy
+713103003,Giving encouragement to be urinary continent
+713104009,Giving encouragement to have positive body image
+713105005,Giving encouragement to be bowel continent
+713144002,Motivational interviewing technique
+715760007,Facilitation of development of supportive relationship
+718026005,Cognitive behavioral therapy for psychosis
+719918006,Social Use of Language program
+720444008,Sequencing skills training
+72353004,Psychosocial procedure
+734278000,Time out behavior strategy
+741053006,Education about family support
+780824004,Family contact facilitation
+781621000000106,Education about child benefit
+79441000,Group reassurance
+813021000000100,Advice on foreign travel - diarrhoea
+814131000000101,Referral for high intensity cognitive behavioural therapy
+849881000000103,Respecting cultural and spiritual wishes
+86515003,Premarital counseling
+866252000,Intensive parent-child interaction therapy
 868185009,Cognitive behavioral therapy for insomnia
 871691000000100,Social prescribing offered
 871711000000103,Social prescribing declined
 871731000000106,Referral to social prescribing service
+882381000000106,Behavioural parent training
+883841000000104,Cognitive behavioural therapy parenting programme
 908541000000103,Patient given advice about management of anxiety
 913431000000101,Education about chair based exercise programme
 933461000000100,Referral for guided self-help for anxiety declined
 933521000000109,Anxiety screening declined
+975121000000101,Coaching
+975261000000102,Facilitation of development of interaction skills
+975281000000106,Rapid instructional pacing
+975441000000104,Facilitating engagement in therapy
+983671000000100,Facilitating development of supportive relationships
