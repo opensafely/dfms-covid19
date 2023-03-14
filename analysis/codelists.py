@@ -66,8 +66,8 @@ ind_codes = codelist_from_csv(
     system="snomed",
 )
 
-ind_acute_pain = codelist_from_csv(
-    "codelists/user-RachelS99-dfm-indications-acute-pain.csv",
+ind_agitation = codelist_from_csv(
+    "codelists/user-RachelS99-dfm-indications-agitation.csv",
     system="snomed",
 )
 
@@ -76,23 +76,23 @@ ind_alcohol_withdrawal = codelist_from_csv(
     system="snomed",
 )
 
+ind_anxiety = codelist_from_csv(
+    "codelists/user-RachelS99-dfm-indications-anxiety.csv",
+    system="snomed",
+)
+
 ind_body_dysmorphia = codelist_from_csv(
     "codelists/user-RachelS99-dfm-indications-body-dysmorphic-disorder.csv",
     system="snomed",
 )
 
-ind_chronic_depression = codelist_from_csv(
-    "codelists/user-RachelS99-dfm-indications-chronic-depression.csv",
+ind_depression = codelist_from_csv(
+    "codelists/user-RachelS99-dfm-indications-depression.csv",
     system="snomed",
 )
 
-ind_chronic_pain = codelist_from_csv(
-    "codelists/user-RachelS99-dfm-indications-chronic-pain.csv",
-    system="snomed",
-)
-
-ind_generalised_anxiety = codelist_from_csv(
-    "codelists/user-RachelS99-dfm-indications-generalised-anxiety.csv",
+ind_dissociative_disorder = codelist_from_csv(
+    "codelists/user-RachelS99-dfm-indications-dissociative-disorder.csv",
     system="snomed",
 )
 
@@ -101,33 +101,8 @@ ind_insomnia = codelist_from_csv(
     system="snomed",
 )
 
-ind_mild_depression = codelist_from_csv(
-    "codelists/user-RachelS99-dfm-indications-mild-depression.csv",
-    system="snomed",
-)
-
-ind_moderate_depression = codelist_from_csv(
-    "codelists/user-RachelS99-dfm-indications-moderate-depression.csv",
-    system="snomed",
-)
-
-ind_nerve_pain = codelist_from_csv(
-    "codelists/user-RachelS99-dfm-indications-nerve-pain.csv",
-    system="snomed",
-)
-
-ind_neuropathic_pain = codelist_from_csv(
-    "codelists/user-RachelS99-dfm-indications-neuropathic-pain.csv",
-    system="snomed",
-)
-
-ind_ocd = codelist_from_csv(
-    "codelists/user-RachelS99-dfm-indications-obsessive-compulsive-disorder.csv",
-    system="snomed",
-)
-
-ind_panic_disorder = codelist_from_csv(
-    "codelists/user-RachelS99-dfm-indications-panic-disorder.csv",
+ind_pain = codelist_from_csv(
+    "codelists/user-RachelS99-dfm-indications-pain.csv",
     system="snomed",
 )
 
@@ -136,25 +111,6 @@ ind_personality_disorder = codelist_from_csv(
     system="snomed",
 )
 
-ind_psychotic_depression = codelist_from_csv(
-    "codelists/user-RachelS99-dfm-indications-psychotic-depression.csv",
-    system="snomed",
-)
-
-ind_restlessness = codelist_from_csv(
-    "codelists/user-RachelS99-dfm-indications-restlessness-and-agitation.csv",
-    system="snomed",
-)
-
-ind_sciatica = codelist_from_csv(
-    "codelists/user-RachelS99-dfm-indications-sciatica.csv",
-    system="snomed",
-)
-
-ind_severe_depression = codelist_from_csv(
-    "codelists/user-RachelS99-dfm-indications-severe-depression.csv",
-    system="snomed",
-)
 
 # Referral to social prescribing codes
 socialrx_codes = codelist_from_csv(
