@@ -99,6 +99,7 @@ code,term
 110358001,Heightened global phobia
 110364008,Posttreatment pain
 11114002,Sore gums
+111237004,Putti's syndrome
 111487009,Dream anxiety disorder
 111490003,"Panic disorder with agoraphobia, agoraphobic avoidance in partial remission AND severe panic attacks"
 111491004,"Panic disorder with agoraphobia, agoraphobic avoidance in full remission AND panic attacks in partial remission"
@@ -750,6 +751,7 @@ code,term
 272027003,Complaining of a headache
 272047006,Complaining of loin pain
 272049009,Complaining of renal pain
+273206005,Chinese auricular sciatica
 2733002,Heel pain
 27355003,Toothache
 274277005,Complaining of right iliac fossa pain
@@ -1037,6 +1039,7 @@ code,term
 310496002,Moderate depression
 310497006,Severe depression
 3109008,Secondary dysthymia early onset
+311804006,Prolapsed lumbar intervertebral disc with sciatica
 313182004,Chronic post-traumatic stress disorder
 313344000,Vulval superficial dyspareunia
 313387002,Phonophobia

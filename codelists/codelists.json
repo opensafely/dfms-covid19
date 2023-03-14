@@ -6,53 +6,11 @@
       "downloaded_at": "2023-02-13 11:43:34.027893Z",
       "sha": "4026da41b8980bad0a2e68c02b2340f5a494e822"
     },
-    "user-RachelS99-dependence-forming-medications-antidepressants-dmd.csv": {
-      "id": "user/RachelS99/dependence-forming-medications-antidepressants-dmd/79509a15",
-      "url": "https://codelists.opensafely.org/codelist/user/RachelS99/dependence-forming-medications-antidepressants-dmd/79509a15/",
-      "downloaded_at": "2023-02-13 11:43:34.293519Z",
-      "sha": "525db1d14258b9dc001c937515cc278c7c5a114d"
-    },
-    "user-RachelS99-dependence-forming-medications-benzodiazepines-dmd.csv": {
-      "id": "user/RachelS99/dependence-forming-medications-benzodiazepines-dmd/4731b3ab",
-      "url": "https://codelists.opensafely.org/codelist/user/RachelS99/dependence-forming-medications-benzodiazepines-dmd/4731b3ab/",
-      "downloaded_at": "2023-02-13 11:43:34.512290Z",
-      "sha": "4ef90d7285819a6db9efa82047d1bc5e1be607e5"
-    },
-    "user-RachelS99-dependence-forming-medications-chloral-and-derivatives-dmd.csv": {
-      "id": "user/RachelS99/dependence-forming-medications-chloral-and-derivatives-dmd/1512cd41",
-      "url": "https://codelists.opensafely.org/codelist/user/RachelS99/dependence-forming-medications-chloral-and-derivatives-dmd/1512cd41/",
-      "downloaded_at": "2023-02-13 11:43:34.746645Z",
-      "sha": "8359ff14e208daa1233f5bb5df8364aaacf18913"
-    },
-    "user-RachelS99-dependence-forming-medications-clomethiazole-dmd.csv": {
-      "id": "user/RachelS99/dependence-forming-medications-clomethiazole-dmd/62f3e6d6",
-      "url": "https://codelists.opensafely.org/codelist/user/RachelS99/dependence-forming-medications-clomethiazole-dmd/62f3e6d6/",
-      "downloaded_at": "2023-02-13 11:43:34.965394Z",
-      "sha": "b3849cc102ece2b3ce5fd688543f97eb0468060e"
-    },
-    "user-RachelS99-dependence-forming-medications-gabapentinoids-dmd.csv": {
-      "id": "user/RachelS99/dependence-forming-medications-gabapentinoids-dmd/30d5006c",
-      "url": "https://codelists.opensafely.org/codelist/user/RachelS99/dependence-forming-medications-gabapentinoids-dmd/30d5006c/",
-      "downloaded_at": "2023-02-13 11:43:35.199769Z",
-      "sha": "5f9485bc99291a0214593b72c65763db3cf18c1c"
-    },
-    "user-RachelS99-dependence-forming-medications-opioid-pain-medicine-dmd.csv": {
-      "id": "user/RachelS99/dependence-forming-medications-opioid-pain-medicine-dmd/7eb61a01",
-      "url": "https://codelists.opensafely.org/codelist/user/RachelS99/dependence-forming-medications-opioid-pain-medicine-dmd/7eb61a01/",
-      "downloaded_at": "2023-02-13 11:43:35.481018Z",
-      "sha": "3f3a7bdc73e5fb6176490f917020619568a00da7"
-    },
-    "user-RachelS99-dependence-forming-medications-z-drugs-dmd.csv": {
-      "id": "user/RachelS99/dependence-forming-medications-z-drugs-dmd/4c973397",
-      "url": "https://codelists.opensafely.org/codelist/user/RachelS99/dependence-forming-medications-z-drugs-dmd/4c973397/",
-      "downloaded_at": "2023-02-13 11:43:35.715429Z",
-      "sha": "c9c060f0166e28c851845e84fcd65da6cf3ff307"
-    },
     "user-RachelS99-indications-for-dependency-medications.csv": {
-      "id": "user/RachelS99/indications-for-dependency-medications/131d57dd",
-      "url": "https://codelists.opensafely.org/codelist/user/RachelS99/indications-for-dependency-medications/131d57dd/",
-      "downloaded_at": "2023-03-14 15:18:40.593485Z",
-      "sha": "d96d530211db90d1dbcca32e7c8faafd27c32afe"
+      "id": "user/RachelS99/indications-for-dependency-medications/4aa1be33",
+      "url": "https://codelists.opensafely.org/codelist/user/RachelS99/indications-for-dependency-medications/4aa1be33/",
+      "downloaded_at": "2023-03-14 18:22:07.785944Z",
+      "sha": "749cbe17a738ea1d7e9e5d6c7d3628af6390a8a3"
     },
     "user-RachelS99-social-prescribing-in-dependency.csv": {
       "id": "user/RachelS99/social-prescribing-in-dependency/60fe7172",
@@ -89,60 +47,6 @@
       "url": "https://codelists.opensafely.org/codelist/user/RachelS99/gp-consults/71f5a4c5/",
       "downloaded_at": "2023-03-14 13:01:45.854803Z",
       "sha": "8987f7969aec91b88b44984ce060fd903a476d59"
-    },
-    "user-RachelS99-dfm-indications-agitation.csv": {
-      "id": "user/RachelS99/dfm-indications-agitation/42897e51",
-      "url": "https://codelists.opensafely.org/codelist/user/RachelS99/dfm-indications-agitation/42897e51/",
-      "downloaded_at": "2023-03-14 13:01:46.095274Z",
-      "sha": "4f9e13a4ec68842b23442f7c39302342b4b81c19"
-    },
-    "user-RachelS99-dfm-indications-alcohol-withdrawal.csv": {
-      "id": "user/RachelS99/dfm-indications-alcohol-withdrawal/5e4bb17c",
-      "url": "https://codelists.opensafely.org/codelist/user/RachelS99/dfm-indications-alcohol-withdrawal/5e4bb17c/",
-      "downloaded_at": "2023-03-14 13:01:46.343437Z",
-      "sha": "a2cbf83b410a66ff5188c4e3da099de96831de89"
-    },
-    "user-RachelS99-dfm-indications-anxiety.csv": {
-      "id": "user/RachelS99/dfm-indications-anxiety/26c74b26",
-      "url": "https://codelists.opensafely.org/codelist/user/RachelS99/dfm-indications-anxiety/26c74b26/",
-      "downloaded_at": "2023-03-14 13:01:46.593754Z",
-      "sha": "23e94ae6a71b4eaf88ab4b181970b2fadb0c2eb5"
-    },
-    "user-RachelS99-dfm-indications-body-dysmorphic-disorder.csv": {
-      "id": "user/RachelS99/dfm-indications-body-dysmorphic-disorder/5a14f365",
-      "url": "https://codelists.opensafely.org/codelist/user/RachelS99/dfm-indications-body-dysmorphic-disorder/5a14f365/",
-      "downloaded_at": "2023-02-13 17:36:42.021502Z",
-      "sha": "2362c46877fb5da31cd644abf4b9c8ee5a9bd006"
-    },
-    "user-RachelS99-dfm-indications-depression.csv": {
-      "id": "user/RachelS99/dfm-indications-depression/74a864bb",
-      "url": "https://codelists.opensafely.org/codelist/user/RachelS99/dfm-indications-depression/74a864bb/",
-      "downloaded_at": "2023-03-14 13:01:47.061491Z",
-      "sha": "4f90509dda106fa3449b3361cb1148919ce36a12"
-    },
-    "user-RachelS99-dfm-indications-dissociative-disorder.csv": {
-      "id": "user/RachelS99/dfm-indications-dissociative-disorder/5b98f186",
-      "url": "https://codelists.opensafely.org/codelist/user/RachelS99/dfm-indications-dissociative-disorder/5b98f186/",
-      "downloaded_at": "2023-03-14 13:01:47.301191Z",
-      "sha": "992878af10c32a0fc4f24ffb8742475d6684199a"
-    },
-    "user-RachelS99-dfm-indications-insomnia.csv": {
-      "id": "user/RachelS99/dfm-indications-insomnia/297a0b1c",
-      "url": "https://codelists.opensafely.org/codelist/user/RachelS99/dfm-indications-insomnia/297a0b1c/",
-      "downloaded_at": "2023-03-14 13:01:47.523185Z",
-      "sha": "25353a9484d09518d04211da00e710be29c70272"
-    },
-    "user-RachelS99-dfm-indications-pain.csv": {
-      "id": "user/RachelS99/dfm-indications-pain/106a97e7",
-      "url": "https://codelists.opensafely.org/codelist/user/RachelS99/dfm-indications-pain/106a97e7/",
-      "downloaded_at": "2023-03-14 13:01:47.925767Z",
-      "sha": "84e079580cfcd8718d3858d8a8aafd886d6513af"
-    },
-    "user-RachelS99-dfm-indications-personality-disorder.csv": {
-      "id": "user/RachelS99/dfm-indications-personality-disorder/775b24b1",
-      "url": "https://codelists.opensafely.org/codelist/user/RachelS99/dfm-indications-personality-disorder/775b24b1/",
-      "downloaded_at": "2023-03-14 13:01:48.179811Z",
-      "sha": "4bb1a261d976b3e9a61c17f2354e9d77988f0f24"
     }
   }
 }
