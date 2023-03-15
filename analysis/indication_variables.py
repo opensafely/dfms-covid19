@@ -2008,7 +2008,7 @@ indication_variables = dict(
         },
         indication_code=patients.with_these_clinical_events(
             ind_codes,
-            between=["index_date", "last_day_of_month(index_date)"],
+            on_or_before="index_date",
             returning="code",
         ),
         return_expectations={
