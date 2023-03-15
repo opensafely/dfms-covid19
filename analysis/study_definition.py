@@ -41,6 +41,7 @@ study = StudyDefinition(
         AND NOT hematological_cancer
         AND NOT lung_cancer
         AND NOT other_cancer
+        AND NOT has_epilepsy
         """,
         registered=patients.registered_as_of(
             "index_date",
@@ -68,6 +69,10 @@ study = StudyDefinition(
             othercan_codes,
             between=["index_date", "last_day_of_month(index_date)"],
         ),
+        has_epilepsy=patients.with_these_clinical_events(
+            epilepsy_codes,
+            between=["index_date", "last_day_of_month(index_date)"],
+        ),
     ),
     with_medication=patients.with_these_medications(
         dfm_codes,
@@ -80,8 +85,7 @@ study = StudyDefinition(
     ),
     with_indication=patients.with_these_clinical_events(
         ind_codes,
-        find_last_match_in_period=True,
-        between=["index_date", "last_day_of_month(index_date)"],
+        on_or_before="index_date",
         returning="binary_flag",
         return_expectations={
             "incidence": 0.8,
@@ -171,15 +175,15 @@ measures = [
     ),
     Measure(
         id="indication_rate",
-        numerator="with_indication",
+        numerator="research_population",
         denominator="population",
-        group_by=["research_population"],
+        group_by=["with_indication"],
     ),
     Measure(
         id="medication_rate",
-        numerator="with_medication",
+        numerator="research_population",
         denominator="population",
-        group_by=["research_population"],
+        group_by=["with_medication"],
     ),
     Measure(
         id="gp_consultation_with_medication_rate",
