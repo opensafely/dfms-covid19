@@ -59,19 +59,19 @@ study = StudyDefinition(
         ),
         hematological_cancer=patients.with_these_clinical_events(
             haemcan_codes,
-            between=["index_date", "last_day_of_month(index_date)"],
+            on_or_before="index_date",
         ),
         lung_cancer=patients.with_these_clinical_events(
             lungcan_codes,
-            between=["index_date", "last_day_of_month(index_date)"],
+            on_or_before="index_date",
         ),
         other_cancer=patients.with_these_clinical_events(
             othercan_codes,
-            between=["index_date", "last_day_of_month(index_date)"],
+            on_or_before="index_date",
         ),
         has_epilepsy=patients.with_these_clinical_events(
             epilepsy_codes,
-            between=["index_date", "last_day_of_month(index_date)"],
+            on_or_before="index_date",
         ),
     ),
     with_medication=patients.with_these_medications(
@@ -113,7 +113,7 @@ study = StudyDefinition(
     with_social_prescribing=patients.with_these_clinical_events(
         socialrx_codes,
         find_last_match_in_period=True,
-        between=["index_date", "last_day_of_month(index_date)"],
+        on_or_before="index_date",
         returning="binary_flag",
         return_expectations={
         },
@@ -121,7 +121,7 @@ study = StudyDefinition(
     count_social_prescribing=patients.with_these_clinical_events(
         socialrx_codes,
         find_last_match_in_period=True,
-        between=["index_date", "last_day_of_month(index_date)"],
+        on_or_before="index_date",
         returning="number_of_matches_in_period",
         return_expectations={
             "int": {"distribution": "poisson", "mean": 3},
