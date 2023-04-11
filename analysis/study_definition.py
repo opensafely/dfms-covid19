@@ -8,7 +8,6 @@ from cohortextractor import (
     patients,
 )
 from demographic_variables import demographic_variables
-from indication_variables import indication_variables
 from medication_variables import medication_variables
 from codelists import *
 from datetime import date
@@ -91,6 +90,78 @@ study = StudyDefinition(
             "incidence": 0.8,
         },
     ),
+    alcohol_dependence=patients.with_these_clinical_events(
+        alcohol_dependence,
+        on_or_before="index_date",
+        returning="binary_flag",
+        return_expectations={
+            "incidence": 0.05,
+        },
+    ),
+    anxiety_disorder=patients.with_these_clinical_events(
+        anxiety_disorder,
+        on_or_before="index_date",
+        returning="binary_flag",
+        return_expectations={
+            "incidence": 0.05,
+        },
+    ),
+    chronic_pain=patients.with_these_clinical_events(
+        chronic_pain,
+        on_or_before="index_date",
+        returning="binary_flag",
+        return_expectations={
+            "incidence": 0.05,
+        },
+    ),
+    insomnia=patients.with_these_clinical_events(
+        insomnia,
+        on_or_before="index_date",
+        returning="binary_flag",
+        return_expectations={
+            "incidence": 0.05,
+        },
+    ),
+    mental_disorder=patients.with_these_clinical_events(
+        mental_disorder,
+        on_or_before="index_date",
+        returning="binary_flag",
+        return_expectations={
+            "incidence": 0.05,
+            },
+    ),
+    muscle_spasm=patients.with_these_clinical_events(
+        muscle_spasm,
+        on_or_before="index_date",
+        returning="binary_flag",
+        return_expectations={
+            "incidence": 0.05,
+            },
+    ),
+    neurological_pain=patients.with_these_clinical_events(
+        neurological_pain,
+        on_or_before="index_date",
+        returning="binary_flag",
+        return_expectations={
+            "incidence": 0.05,
+        },
+    ),
+    sciatica=patients.with_these_clinical_events(
+        sciatica,
+        on_or_before="index_date",
+        returning="binary_flag",
+        return_expectations={
+            "incidence": 0.05,
+        },
+    ),
+    post_covid=patients.with_these_clinical_events(
+        post_covid,
+        on_or_before="index_date",
+        returning="binary_flag",
+        return_expectations={
+            "incidence": 0.05,
+        },
+    ),
     with_consultation=patients.with_these_clinical_events(
         gp_consultations,
         find_last_match_in_period=True,
@@ -128,7 +199,6 @@ study = StudyDefinition(
             "incidence": 0.25,
         },
     ),
-    ** indication_variables,
     ** medication_variables
 )
 
