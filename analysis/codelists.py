@@ -17,48 +17,48 @@ ind_codes = codelist_from_csv(
     system="snomed",
 )
 
-ind_codes_alcoholism = codelist_from_csv(
-    "codelists/user-RachelS99-disorders-alcohol-dependence.csv",
+alcohol_dependence = codelist_from_csv(
+    "codelists/user-RachelS99-dfm-disorders-alcohol-dependence.csv",
     system="snomed",
 )
 
-ind_codes_anxiety = codelist_from_csv(
-    "codelists/user-RachelS99-disorders-anxiety-disorder.csv",
+anxiety_disorder = codelist_from_csv(
+    "codelists/user-RachelS99-dfm-disorders-anxiety-disorder.csv",
     system="snomed",
 )
 
-ind_codes_pain = codelist_from_csv(
-    "codelists/user-RachelS99-disorders-chronic-pain-syndrome.csv",
+chronic_pain = codelist_from_csv(
+    "codelists/user-RachelS99-dfm-disorders-chronic-pain-syndrome.csv",
     system="snomed",
 )
 
-ind_codes_insomnia = codelist_from_csv(
-    "codelists/user-RachelS99-disorders-insomnia.csv",
+insomnia = codelist_from_csv(
+    "codelists/user-RachelS99-dfm-disorders-insomnia.csv",
     system="snomed",
 )
 
-ind_codes_mental = codelist_from_csv(
-    "codelists/user-RachelS99-disorders-mental-disorder.csv",
+mental_disorder = codelist_from_csv(
+    "codelists/user-RachelS99-dfm-disorders-mental-disorder.csv",
     system="snomed",
 )
 
-ind_codes_spasm = codelist_from_csv(
-    "codelists/user-RachelS99-disorders-muscle-spasm-of-head-andor-neck.csv",
+muscle_spasm = codelist_from_csv(
+    "codelists/user-RachelS99-dfm-disorders-muscle-spasm-of-head-andor-neck.csv",
     system="snomed",
 )
 
-ind_codes_neurological = codelist_from_csv(
-    "codelists/user-RachelS99-disorders-neurological-pain-disorder.csv",
+neurological_pain = codelist_from_csv(
+    "codelists/user-RachelS99-dfm-disorders-neurological-pain-disorder.csv",
     system="snomed",
 )
 
-ind_codes_sciatica = codelist_from_csv(
-    "codelists/user-RachelS99-disorders-sciatic-neuropathy.csv",
+sciatica = codelist_from_csv(
+    "codelists/user-RachelS99-dfm-disorders-sciatic-neuropathy.csv",
     system="snomed",
 )
 
-ind_codes_covid = codelist_from_csv(
-    "codelists/user-RachelS99-disorders-post-acute-covid-19.csv",
+post_covid = codelist_from_csv(
+    "codelists/user-RachelS99-dfm-disorders-post-acute-covid-19.csv",
     system="snomed",
 )
 

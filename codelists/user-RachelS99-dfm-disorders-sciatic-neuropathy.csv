@@ -1,172 +1,25 @@
-<!DOCTYPE html>
-<html lang="en" class="h-100">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap" /></noscript>
-<style>
-      html {
-        position: relative;
-        min-height: 100%;
-      }
-
-      body {
-        font-family: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-        margin-bottom: 120px;
-      }
-
-      nav.bg-secondary {
-        background-color: #002147 !important;
-      }
-
-      a {
-        color: #0058be;
-        font-weight: 600;
-        text-decoration-skip-ink: auto;
-        text-underline-offset: 1px;
-      }
-
-      a:hover,
-      a:focus {
-        color: #00397a;
-        text-decoration: underline;
-        text-decoration-color: #001936;
-      }
-
-      .home-codelists dd {
-        margin-bottom: 1rem;
-        padding-bottom: 1rem;
-        border-bottom: 1px solid #ddd;
-      }
-
-      .home-codelists dt {
-        font-size: 1.1rem;
-      }
-
-      .footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 80px;
-        padding-top: 20px;
-        line-height: 20px;
-        background-color: #f5f5f5;
-      }
-
-      .footer p {
-        margin-bottom: 0;
-      }
-    </style>
-<script src="https://kit.fontawesome.com/7e05304e34.js" crossorigin="anonymous"></script>
-<script>
-      if (document.location.hostname === "www.opencodelists.org") {
-        var script = document.createElement("script");
-        script.defer = true;
-        script.setAttribute("data-domain", "opencodelists.org");
-        script.id = "plausible";
-        script.src = "https://plausible.io/js/plausible.compat.js";
-        document.head.appendChild(script);
-      }
-    </script>
-<title>OpenCodelists</title>
-<link rel="icon" href="/static/favicon.ico">
-<link rel="icon" href="/static/icon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/static/apple-touch-icon.png">
-<link rel="manifest" href="/static/manifest.webmanifest">
-</head>
-<body class="d-flex flex-column h-100">
-<nav class="navbar navbar-expand-sm navbar-dark bg-secondary justify-content-between align-items-baseline">
-<div class="mr-auto">
-<a class="navbar-brand" href="/">OpenCodelists</a
-        >
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
-</button>
-</div>
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
-<ul class="navbar-nav ml-auto">
-<li class="navbar-nav nav-item">
-<a class="nav-link text-white" href="/docs/">Docs</a>
-</li>
-<li class="navbar-nav nav-item">
-<a class="nav-link text-white" href="/accounts/register/">Sign up</a>
-</li>
-<li class="navbar-nav nav-item">
-<a class="nav-link text-white" href="/accounts/login/">Sign in</a>
-</li>
-</ul>
-</div>
-</nav>
-<main role="main" class="flex-shrink-0 container mb-5">
-<div class="mt-4">
-<h3 class="mt-4">DFM Disorders - sciatic neuropathy</h3>
-<p class="text-muted">This version is a draft</p>
-<hr />
-<div id="codelist-builder-container"></div>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js" integrity="sha512-/DXTXr6nQodMUiq+IUJYCt2PPOUjrHJ9wFrqpJ3XkgPNOZVfMok7cRw6CSxyCQxXn6ozlESsSh1/sMCTF1rL/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js" integrity="sha512-wV7Yj1alIZDqZFCUQJy85VN+qvEIly93fIQAN7iqDFCPEucLCeNFz4r35FCo9s6WrpdDQPi80xbljXB8Bjtvcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
-<script id="results-heading" type="application/json">"Showing all matching concepts"</script>
-<script id="searches" type="application/json">[{"term_or_code": "code: 52585001", "url": "/builder/3e49573d/search/code:52585001/", "delete_url": "/builder/3e49573d/search/code:52585001/delete/", "active": false}]</script>
-<script id="filter" type="application/json">null</script>
-<script id="tree-tables" type="application/json">[["Disorder", ["52585001"]]]</script>
-<script id="code-to-term" type="application/json">{"10861251000119104": "Injury of right sciatic nerve", "10861291000119109": "Injury of left sciatic nerve", "129179000": "Piriformis syndrome", "15633361000119103": "Bilateral sciatica", "15968741000119100": "Low back pain co-occurrent and due to bilateral sciatica", "16206701000119101": "Disorder of bilateral sciatic nerves", "16206741000119104": "Piriformis syndrome of bilateral lower limbs", "16839401000119104": "Low back pain co-occurrent with neuralgia of left sciatic nerve", "202794004": "Lumbago with sciatica", "212311000": "Closed injury sciatic nerve", "212312007": "Open injury sciatic nerve", "23056005": "Sciatica", "230638003": "Sciatic nerve compression", "247390002": "Sciatic nerve palsy", "291921000119100": "Disorder of left sciatic nerve", "291931000119102": "Disorder of right sciatic nerve", "307176005": "Acute sciatica", "307177001": "Chronic sciatica", "367137004": "Sciatic nerve lesion", "46960006": "Lumbago-sciatica due to displacement of lumbar intervertebral disc", "52585001": "Sciatic neuropathy", "54314008": "Putti-Chavany syndrome", "86269002": "Injury of sciatic nerve", "86345004": "Bertolotti's syndrome"}</script>
-<script id="code-to-status" type="application/json">{"15633361000119103": "(+)", "46960006": "(+)", "86345004": "(+)", "86269002": "(+)", "202794004": "(+)", "23056005": "(+)", "54314008": "(+)", "247390002": "(+)", "16206741000119104": "(+)", "52585001": "+", "16839401000119104": "(+)", "10861251000119104": "(+)", "10861291000119109": "(+)", "212311000": "(+)", "291921000119100": "(+)", "307176005": "(+)", "307177001": "(+)", "16206701000119101": "(+)", "212312007": "(+)", "291931000119102": "(+)", "367137004": "(+)", "230638003": "(+)", "129179000": "(+)", "15968741000119100": "(+)"}</script>
-<script id="all-codes" type="application/json">["15633361000119103", "46960006", "86345004", "86269002", "23056005", "54314008", "247390002", "16206741000119104", "52585001", "16839401000119104", "10861251000119104", "10861291000119109", "212311000", "230638003", "291921000119100", "307176005", "307177001", "16206701000119101", "212312007", "291931000119102", "367137004", "202794004", "129179000", "15968741000119100"]</script>
-<script id="included-codes" type="application/json">["52585001"]</script>
-<script id="excluded-codes" type="application/json">[]</script>
-<script id="parent-map" type="application/json">{"700012005": ["118937003"], "127279002": ["417163006", "118937003"], "76069003": ["118953000", "88230002"], "279039007": ["161891005", "822987005"], "267982002": ["298671000", "279039007", "48926009"], "230638003": ["230637008", "367137004"], "609592007": ["609600000", "128189008"], "362965005": ["64572001"], "25416002": ["16269008", "246605000"], "161891005": ["414252009", "301366005"], "298249004": ["118952005", "699697007"], "87381000119101": ["119414006", "57676002", "48926009"], "66091009": ["64572001"], "78626001": ["276654001", "128121009"], "239953001": ["19660004"], "128135006": ["700012005", "419003001"], "11865081000119107": ["127279002", "451431000124104"], "8447006": ["371521007", "73573004"], "50927007": ["118954006", "88230002", "312225001"], "363032009": ["73573004", "78626001"], "10601006": ["90834002", "713314006"], "302226006": ["42658009", "386033004", "19660004", "246605000"], "279069000": ["106028002", "279001004"], "280136002": ["280134004", "118937003"], "118952005": ["106028002"], "202794004": ["33308003", "23056005", "279039007", "822988000"], "700010002": ["127279002", "700012005"], "73573004": ["276654001", "928000"], "10861291000119109": ["291921000119100", "11790921000119104", "86269002"], "212311000": ["416886008", "367137004", "86269002"], "128239009": ["417163006", "118940003"], "1145241008": ["36427004"], "248402002": ["404684003"], "129136002": ["127279002", "609600000", "73590005"], "298671000": ["116306000", "699697007"], "106147001": ["102957003"], "16026551000119108": ["292511000119106", "292501000119108"], "12584003": ["279069000", "118953000"], "118954006": ["106028002"], "128121009": ["302292003", "64572001"], "73590005": ["282026002", "57182000", "302226006"], "11865041000119102": ["127279002", "451421000124102"], "276435006": ["106147001"], "11790921000119104": ["7523003", "11865081000119107"], "116312005": ["302293008"], "15968741000119100": ["16839401000119104", "15633361000119103"], "282026002": ["417163006", "19660004"], "93010007": ["363032009", "298385001", "363030001", "74877002", "699699005", "129139009", "8447006"], "46960006": ["202794004", "1145238004", "87381000119101", "267982002"], "298379008": ["414252009"], "419003001": ["116312005"], "86269002": ["7523003", "52585001", "129136002"], "125643001": ["417746004", "416462003"], "10861251000119104": ["11790881000119106", "291931000119102", "86269002"], "785875003": ["64572001"], "292531000119101": ["287047008", "25416002"], "7523003": ["700010002", "128135006"], "699699005": ["119414006", "410730009", "88230002"], "118937003": ["128605003", "116312005"], "363030001": ["253937004", "822988000", "78626001"], "16206701000119101": ["291921000119100", "16026551000119108", "291931000119102"], "367137004": ["297946004", "52585001"], "19660004": ["64572001", "248402002"], "699943005": ["363025000", "410730009"], "78514002": ["10601006", "419003001"], "363025000": ["33308003", "276654001"], "297946004": ["609600000", "239953001", "299735001"], "291931000119102": ["52585001", "292501000119108"], "48926009": ["298379008", "279001004"], "302293008": ["404684003"], "16839401000119104": ["291921000119100", "202794004", "292531000119101"], "23056005": ["52585001", "78514002", "25416002"], "253937004": ["276654001"], "54314008": ["23056005"], "291921000119100": ["292511000119106", "52585001"], "414252009": ["404684003"], "451421000124102": ["118937003"], "404684003": ["138875005"], "399269003": ["118952005", "785875003", "88230002"], "42658009": ["118940003"], "129139009": ["116306000", "822988000", "410730009"], "86345004": ["267982002", "12584003", "93010007", "25416002", "52585001", "78514002"], "15633361000119103": ["16638401000119101", "23056005", "16206701000119101"], "443700006": ["36427004", "129139009"], "292511000119106": ["609600000", "451431000124104"], "116306000": ["822987005", "298379008"], "16206741000119104": ["129179000", "15633361000119103"], "1145238004": ["443700006", "1145241008"], "105616000": ["125643001", "128605003"], "713314006": ["116312005", "699697007"], "397185006": ["125643001", "57182000", "299735001"], "57182000": ["386033004", "128239009"], "298385001": ["119414006", "118953000"], "287047008": ["10601006"], "90834002": ["302293008", "279001004"], "928000": ["106028002", "362965005"], "371521007": ["76069003", "5294002"], "118953000": ["106028002"], "280134004": ["128605003", "19660004"], "5294002": ["64572001"], "11790881000119106": ["7523003", "11865041000119102"], "292501000119108": ["609600000", "451421000124102"], "212312007": ["397185006", "125659001", "86269002", "367137004"], "416886008": ["417746004", "416462003"], "230637008": ["297946004", "609592007"], "33308003": ["414252009", "64572001"], "276654001": ["66091009", "5294002"], "128605003": ["64572001", "302293008"], "822988000": ["128121009", "822987005"], "301366005": ["302292003", "279001004"], "118940003": ["362965005"], "119414006": ["106028002", "298379008"], "451431000124104": ["118937003"], "125659001": ["7523003", "26947005"], "699697007": ["106147001"], "57676002": ["279069000", "298249004"], "416462003": ["417163006", "225552003"], "26947005": ["127279002", "105616000"], "307176005": ["23056005"], "410730009": ["33308003", "298379008"], "822987005": ["302292003"], "74877002": ["699943005"], "279001004": ["22253000", "699697007"], "386033004": ["118940003"], "307177001": ["23056005"], "105969002": ["64572001"], "372109003": ["699699005", "399269003"], "287048003": ["10601006"], "292521000119104": ["287048003", "25416002"], "312225001": ["928000", "105969002"], "299735001": ["404684003"], "64572001": ["404684003"], "52585001": ["128135006", "609600000"], "128189008": ["302226006"], "16269008": ["279001004"], "246605000": ["248402002"], "247390002": ["52585001"], "102957003": ["404684003"], "609600000": ["280136002", "302226006"], "417746004": ["417163006"], "22253000": ["276435006"], "106028002": ["404684003"], "417163006": ["64572001"], "16638401000119101": ["292521000119104", "292531000119101"], "88230002": ["928000"], "302292003": ["404684003"], "36427004": ["50927007", "372109003"], "225552003": ["404684003"], "129179000": ["23056005"]}</script>
-<script id="child-map" type="application/json">{"118937003": ["451431000124104", "451421000124102", "127279002", "280136002", "700012005"], "417163006": ["128239009", "282026002", "127279002", "417746004", "416462003"], "118953000": ["76069003", "12584003", "298385001"], "822987005": ["116306000", "279039007", "822988000"], "48926009": ["87381000119101", "267982002"], "367137004": ["230638003", "212312007", "212311000"], "609600000": ["292511000119106", "129136002", "292501000119108", "297946004", "52585001", "609592007"], "64572001": ["33308003", "417163006", "66091009", "128605003", "362965005", "5294002", "105969002", "785875003", "19660004", "128121009"], "16269008": ["25416002"], "301366005": ["161891005"], "118952005": ["298249004", "399269003"], "119414006": ["298385001", "87381000119101", "699699005"], "128121009": ["822988000", "78626001"], "19660004": ["280134004", "282026002", "239953001", "302226006"], "419003001": ["128135006", "78514002"], "127279002": ["129136002", "11865041000119102", "11865081000119107", "26947005", "700010002"], "371521007": ["8447006"], "88230002": ["76069003", "699699005", "50927007", "399269003"], "73573004": ["363032009", "8447006"], "713314006": ["10601006"], "246605000": ["302226006", "25416002"], "106028002": ["118953000", "118952005", "279069000", "928000", "119414006", "118954006"], "451431000124104": ["292511000119106", "11865081000119107"], "23056005": ["307176005", "15633361000119103", "307177001", "54314008", "202794004", "129179000"], "928000": ["312225001", "73573004", "88230002"], "11790921000119104": ["10861291000119109"], "700012005": ["700010002", "128135006"], "36427004": ["443700006", "1145241008"], "404684003": ["302292003", "102957003", "302293008", "248402002", "106028002", "414252009", "225552003", "64572001", "299735001"], "116306000": ["298671000", "129139009"], "102957003": ["106147001"], "292501000119108": ["16026551000119108", "291931000119102"], "279069000": ["57676002", "12584003"], "33308003": ["202794004", "363025000", "410730009"], "302292003": ["128121009", "822987005", "301366005"], "57182000": ["397185006", "73590005"], "298671000": ["267982002"], "106147001": ["276435006", "699697007"], "7523003": ["11790921000119104", "11790881000119106", "125659001", "86269002"], "302293008": ["116312005", "90834002", "128605003"], "16839401000119104": ["15968741000119100"], "8447006": ["93010007"], "1145238004": ["46960006"], "414252009": ["161891005", "33308003", "298379008"], "116312005": ["713314006", "118937003", "419003001"], "417746004": ["125643001", "416886008"], "86269002": ["10861291000119109", "212312007", "10861251000119104", "212311000"], "128189008": ["609592007"], "287047008": ["292531000119101"], "280134004": ["280136002"], "700010002": ["7523003"], "410730009": ["699943005", "699699005", "129139009"], "128605003": ["280134004", "105616000", "118937003"], "78626001": ["363032009", "363030001"], "291921000119100": ["16206701000119101", "16839401000119104", "10861291000119109"], "297946004": ["230637008", "367137004"], "363025000": ["699943005"], "10601006": ["287048003", "78514002", "287047008"], "276654001": ["253937004", "363025000", "73573004", "78626001"], "699699005": ["372109003", "93010007"], "299735001": ["297946004", "397185006"], "52585001": ["291921000119100", "86345004", "86269002", "23056005", "291931000119102", "247390002", "367137004"], "416886008": ["212311000"], "279039007": ["202794004", "267982002"], "298379008": ["119414006", "48926009", "116306000", "410730009"], "312225001": ["50927007"], "292531000119101": ["16638401000119101", "16839401000119104"], "279001004": ["16269008", "90834002", "279069000", "48926009", "301366005"], "292511000119106": ["291921000119100", "16026551000119108"], "138875005": ["404684003"], "74877002": ["93010007"], "785875003": ["399269003"], "118940003": ["42658009", "386033004", "128239009"], "248402002": ["19660004", "246605000"], "12584003": ["86345004"], "822988000": ["202794004", "129139009", "363030001"], "253937004": ["363030001"], "129139009": ["443700006", "93010007"], "87381000119101": ["46960006"], "57676002": ["87381000119101"], "42658009": ["302226006"], "129179000": ["16206741000119104"], "1145241008": ["1145238004"], "125643001": ["397185006", "105616000"], "699697007": ["298671000", "298249004", "713314006", "279001004"], "386033004": ["57182000", "302226006"], "15633361000119103": ["16206741000119104", "15968741000119100"], "363030001": ["93010007"], "5294002": ["371521007", "276654001"], "11865041000119102": ["11790881000119106"], "416462003": ["125643001", "416886008"], "451421000124102": ["11865041000119102", "292501000119108"], "125659001": ["212312007"], "291931000119102": ["16206701000119101", "10861251000119104"], "443700006": ["1145238004"], "239953001": ["297946004"], "267982002": ["46960006", "86345004"], "66091009": ["276654001"], "302226006": ["609600000", "73590005", "128189008"], "362965005": ["118940003", "928000"], "25416002": ["292521000119104", "23056005", "86345004", "292531000119101"], "26947005": ["125659001"], "225552003": ["416462003"], "105616000": ["26947005"], "282026002": ["73590005"], "11865081000119107": ["11790921000119104"], "11790881000119106": ["10861251000119104"], "78514002": ["23056005", "86345004"], "202794004": ["16839401000119104", "46960006"], "298249004": ["57676002"], "699943005": ["74877002"], "22253000": ["279001004"], "397185006": ["212312007"], "161891005": ["279039007"], "287048003": ["292521000119104"], "298385001": ["93010007"], "230637008": ["230638003"], "609592007": ["230637008"], "105969002": ["312225001"], "363032009": ["93010007"], "128239009": ["57182000"], "399269003": ["372109003"], "118954006": ["50927007"], "16638401000119101": ["15633361000119103"], "93010007": ["86345004"], "16206701000119101": ["15633361000119103"], "280136002": ["609600000"], "129136002": ["86269002"], "76069003": ["371521007"], "276435006": ["22253000"], "292521000119104": ["16638401000119101"], "90834002": ["10601006"], "128135006": ["7523003", "52585001"], "16026551000119108": ["16206701000119101"], "50927007": ["36427004"], "73590005": ["129136002"], "372109003": ["36427004"]}</script>
-<script id="is-editable" type="application/json">false</script>
-<script id="draft-url" type="application/json">"/builder/3e49573d/"</script>
-<script id="update-url" type="application/json">"/builder/3e49573d/update/"</script>
-<script id="search-url" type="application/json">"/builder/3e49573d/search/"</script>
-<script id="versions" type="application/json">[]</script>
-<script id="metadata" type="application/json">{"coding_system_name": "SNOMED CT", "coding_system_release": {"release_name": "35.6.0", "valid_from": "2023-03-22"}, "organisation_name": null, "codelist_full_slug": "user/RachelS99/dfm-disorders-sciatic-neuropathy", "hash": "3e49573d"}</script>
-<script src="/static/js/builder.bundle.js"></script>
-</main>
-<footer id="footer" class="border-top bg-light mt-auto py-5">
-<div class="container">
-<ul class="list-inline text-center d-flex flex-column flex-md-row justify-content-center mb-0 mb-md-3">
-<li class="list-inline-item mb-3 mb-md-0 mr-0 mr-md-5">
-<a href="/docs/">
-Documentation
-</a>
-</li>
-<li class="list-inline-item mb-3 mb-md-0 mr-0">
-<a href="https://www.opensafely.org/">
-OpenSAFELY
-</a>
-</li>
-</ul>
-<ul class="list-inline text-center d-flex flex-column flex-md-row justify-content-center">
-<li class="list-inline-item mb-3 mb-md-0 mr-0 mr-md-5">
-<a href="https://www.bennett.ox.ac.uk/">
-Bennett Institute for Applied Data Science
-</a>
-</li>
-<li class="list-inline-item mb-3 mb-md-0">
-<a href="https://www.ox.ac.uk/">
-University of Oxford
-</a>
-</li>
-</ul>
-<div class="row">
-<div class="col-12 offset-md-1 col-md-10 offset-lg-2 col-lg-8 text-center mt-3 mb-0 small">
-<p>© University of Oxford for the Bennett Institute for Applied Data Science 2022. This work may be copied freely for non-commercial research and study. If you wish to do any of the other acts restricted by the copyright you should apply in writing to <a href="/cdn-cgi/l/email-protection#126677737f527d62777c617374777e6b3c7d6075"><span class="__cf_email__" data-cfemail="82f6e7e3efc2edf2e7ecf1e3e4e7eefbacedf0e5">[email&#160;protected]</span></a>.</p>
-<p>SNOMED Clinical Terms® content © International Health Terminology Standards Development Organisation.</p>
-<p>ICD-10 codes, terms and text © World Health Organization, Third Edition. 2007.</p>
-</div>
-</div>
-</div>
-</footer>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
-</html>
+code,term
+10861251000119104,Injury of right sciatic nerve
+10861291000119109,Injury of left sciatic nerve
+129179000,Piriformis syndrome
+15633361000119103,Bilateral sciatica
+15968741000119100,Low back pain co-occurrent and due to bilateral sciatica
+16206701000119101,Disorder of bilateral sciatic nerves
+16206741000119104,Piriformis syndrome of bilateral lower limbs
+16839401000119104,Low back pain co-occurrent with neuralgia of left sciatic nerve
+202794004,Lumbago with sciatica
+212311000,Closed injury sciatic nerve
+212312007,Open injury sciatic nerve
+23056005,Sciatica
+230638003,Sciatic nerve compression
+247390002,Sciatic nerve palsy
+291921000119100,Disorder of left sciatic nerve
+291931000119102,Disorder of right sciatic nerve
+307176005,Acute sciatica
+307177001,Chronic sciatica
+367137004,Sciatic nerve lesion
+46960006,Lumbago-sciatica due to displacement of lumbar intervertebral disc
+52585001,Sciatic neuropathy
+54314008,Putti-Chavany syndrome
+86269002,Injury of sciatic nerve
+86345004,Bertolotti's syndrome
