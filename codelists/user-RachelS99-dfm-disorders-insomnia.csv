@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap" /></noscript>
+<style>
+      html {
+        position: relative;
+        min-height: 100%;
+      }
+
+      body {
+        font-family: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        margin-bottom: 120px;
+      }
+
+      nav.bg-secondary {
+        background-color: #002147 !important;
+      }
+
+      a {
+        color: #0058be;
+        font-weight: 600;
+        text-decoration-skip-ink: auto;
+        text-underline-offset: 1px;
+      }
+
+      a:hover,
+      a:focus {
+        color: #00397a;
+        text-decoration: underline;
+        text-decoration-color: #001936;
+      }
+
+      .home-codelists dd {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .home-codelists dt {
+        font-size: 1.1rem;
+      }
+
+      .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 80px;
+        padding-top: 20px;
+        line-height: 20px;
+        background-color: #f5f5f5;
+      }
+
+      .footer p {
+        margin-bottom: 0;
+      }
+    </style>
+<script src="https://kit.fontawesome.com/7e05304e34.js" crossorigin="anonymous"></script>
+<script>
+      if (document.location.hostname === "www.opencodelists.org") {
+        var script = document.createElement("script");
+        script.defer = true;
+        script.setAttribute("data-domain", "opencodelists.org");
+        script.id = "plausible";
+        script.src = "https://plausible.io/js/plausible.compat.js";
+        document.head.appendChild(script);
+      }
+    </script>
+<title>OpenCodelists</title>
+<link rel="icon" href="/static/favicon.ico">
+<link rel="icon" href="/static/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/static/apple-touch-icon.png">
+<link rel="manifest" href="/static/manifest.webmanifest">
+</head>
+<body class="d-flex flex-column h-100">
+<nav class="navbar navbar-expand-sm navbar-dark bg-secondary justify-content-between align-items-baseline">
+<div class="mr-auto">
+<a class="navbar-brand" href="/">OpenCodelists</a
+        >
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+</div>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav ml-auto">
+<li class="navbar-nav nav-item">
+<a class="nav-link text-white" href="/docs/">Docs</a>
+</li>
+<li class="navbar-nav nav-item">
+<a class="nav-link text-white" href="/accounts/register/">Sign up</a>
+</li>
+<li class="navbar-nav nav-item">
+<a class="nav-link text-white" href="/accounts/login/">Sign in</a>
+</li>
+</ul>
+</div>
+</nav>
+<main role="main" class="flex-shrink-0 container mb-5">
+<div class="mt-4">
+<h3 class="mt-4">DFM Disorders - insomnia</h3>
+<p class="text-muted">This version is a draft</p>
+<hr />
+<div id="codelist-builder-container"></div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js" integrity="sha512-/DXTXr6nQodMUiq+IUJYCt2PPOUjrHJ9wFrqpJ3XkgPNOZVfMok7cRw6CSxyCQxXn6ozlESsSh1/sMCTF1rL/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js" integrity="sha512-wV7Yj1alIZDqZFCUQJy85VN+qvEIly93fIQAN7iqDFCPEucLCeNFz4r35FCo9s6WrpdDQPi80xbljXB8Bjtvcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+<script id="results-heading" type="application/json">"Showing all matching concepts"</script>
+<script id="searches" type="application/json">[{"term_or_code": "code: 193462001", "url": "/builder/3b969747/search/code:193462001/", "delete_url": "/builder/3b969747/search/code:193462001/delete/", "active": false}]</script>
+<script id="filter" type="application/json">null</script>
+<script id="tree-tables" type="application/json">[["Disorder", ["193462001"]]]</script>
+<script id="code-to-term" type="application/json">{"105491000119107": "Primary hyposomnia", "135311000119100": "Insomnia caused by alcohol", "162204000": "Late insomnia", "191997003": "Persistent insomnia", "192454004": "Nonorganic insomnia", "193462001": "Insomnia", "198437004": "Menopausal sleeplessness", "24121004": "Insomnia disorder related to another mental disorder", "248256006": "Not getting enough sleep", "248258007": "Circumstances interfere with sleep", "248259004": "Symptoms interfere with sleep", "268652009": "Transient insomnia", "27971000119105": "Insomnia co-occurrent and due to medical condition", "288081000119106": "Behavioral insomnia of childhood, combined type", "288091000119109": "Behavioral insomnia of childhood, limit setting type", "288101000119104": "Behavioral insomnia of childhood, sleep onset association type", "288421000119100": "Hyposomnia co-occurrent and due to psychological disorder", "3972004": "Primary insomnia", "401236004": "Early morning waking", "41975002": "Insomnia with sleep apnea", "425832009": "Psychophysiologic insomnia", "54230003": "Mixed insomnia", "59050008": "Initial insomnia", "67062000": "Terminal insomnia", "67233009": "Middle insomnia", "724748004": "Chronic insomnia", "762348004": "Acute insomnia", "81608000": "Insomnia disorder related to known organic factor", "83157008": "Fatal familial insomnia", "88982005": "Rebound insomnia", "90361000119105": "Behavioral insomnia of childhood", "91411000119105": "Drug-induced insomnia", "93681000119102": "Insomnia co-occurrent and due to nocturnal myoclonus"}</script>
+<script id="code-to-status" type="application/json">{"268652009": "(+)", "93681000119102": "(+)", "192454004": "(+)", "193462001": "+", "41975002": "(+)", "27971000119105": "(+)", "91411000119105": "(+)", "90361000119105": "(+)", "762348004": "(+)", "88982005": "(+)", "724748004": "(+)", "191997003": "(+)", "288101000119104": "(+)", "3972004": "(+)", "401236004": "(+)", "24121004": "(+)", "105491000119107": "(+)", "67062000": "(+)", "54230003": "(+)", "59050008": "(+)", "425832009": "(+)", "83157008": "(+)", "288421000119100": "(+)", "248259004": "(+)", "198437004": "(+)", "135311000119100": "(+)", "162204000": "(+)", "248258007": "(+)", "288091000119109": "(+)", "288081000119106": "(+)", "81608000": "(+)", "67233009": "(+)", "248256006": "(+)"}</script>
+<script id="all-codes" type="application/json">["268652009", "93681000119102", "192454004", "193462001", "41975002", "27971000119105", "91411000119105", "90361000119105", "762348004", "88982005", "724748004", "191997003", "288101000119104", "3972004", "401236004", "24121004", "105491000119107", "67062000", "54230003", "59050008", "425832009", "83157008", "288421000119100", "248259004", "198437004", "135311000119100", "162204000", "248258007", "288091000119109", "288081000119106", "81608000", "67233009", "248256006"]</script>
+<script id="included-codes" type="application/json">["193462001"]</script>
+<script id="excluded-codes" type="application/json">[]</script>
+<script id="parent-map" type="application/json">{"762348004": ["193462001", "2704003"], "59050008": ["193462001"], "128116006": ["40733004", "118940003"], "248259004": ["193462001"], "362965005": ["64572001"], "162204000": ["193462001"], "118254002": ["404684003"], "24121004": ["193462001", "74732009"], "135311000119100": ["91411000119105", "719848005", "724732000"], "52522001": ["80690008", "81308009"], "90361000119105": ["193462001"], "363137000": ["32895009", "362965005"], "128614008": ["81308009", "128117002", "363166002"], "192454004": ["270487001", "193462001"], "298325004": ["404684003"], "425832009": ["193462001", "31297008"], "54230003": ["193462001"], "32895009": ["782964007"], "64572001": ["404684003"], "404684003": ["138875005"], "782964007": ["64572001"], "118940003": ["362965005"], "83157008": ["193462001", "106018006", "20484008"], "91411000119105": ["418475009", "193462001"], "40733004": ["64572001"], "118934005": ["64572001", "406122000"], "248258007": ["193462001"], "60342002": ["298325004", "64572001"], "266607004": ["106002000"], "363314000": ["39898005"], "80690008": ["362975008", "23853001"], "299718000": ["406122000", "246556002"], "724732000": ["1187219008", "418475009"], "44186003": ["39898005"], "2704003": ["64572001"], "401236004": ["67062000"], "81308009": ["299718000", "23853001", "118934005"], "34101000119105": ["127324008", "58690002"], "288091000119109": ["90361000119105"], "27971000119105": ["193462001"], "128117002": ["23853001", "128116006"], "111475002": ["74732009"], "724748004": ["27624003", "193462001"], "288101000119104": ["90361000119105"], "288421000119100": ["248256006", "74732009"], "67233009": ["193462001"], "81608000": ["193462001"], "719848005": ["1187219008"], "194437008": ["39898005"], "246556002": ["404684003"], "20484008": ["128614008", "52522001"], "39898005": ["64572001", "106168000"], "93681000119102": ["34101000119105", "193462001"], "363235000": ["118940003", "363137000"], "118222006": ["404684003"], "106168000": ["118222006"], "3972004": ["193462001"], "105491000119107": ["248256006"], "198437004": ["266607004", "193462001"], "406122000": ["118254002"], "270487001": ["81308009", "39898005"], "127324008": ["118940003", "60342002"], "106018006": ["80690008", "363235000"], "41975002": ["193462001"], "67062000": ["193462001"], "193462001": ["44186003", "194437008"], "268652009": ["193462001"], "58690002": ["39898005"], "27624003": ["64572001"], "74732009": ["64572001"], "23853001": ["118940003", "246556002"], "363166002": ["40733004", "118934005"], "288081000119106": ["90361000119105"], "31297008": ["111475002"], "191997003": ["193462001"], "106002000": ["64572001"], "88982005": ["193462001"], "362975008": ["64572001"], "248256006": ["193462001"], "418475009": ["363314000"], "1187219008": ["64572001"]}</script>
+<script id="child-map" type="application/json">{"2704003": ["762348004"], "193462001": ["268652009", "192454004", "93681000119102", "41975002", "27971000119105", "91411000119105", "90361000119105", "762348004", "88982005", "724748004", "191997003", "3972004", "24121004", "67062000", "54230003", "59050008", "425832009", "83157008", "248259004", "198437004", "162204000", "248258007", "81608000", "67233009", "248256006"], "40733004": ["363166002", "128116006"], "64572001": ["1187219008", "27624003", "362965005", "74732009", "39898005", "362975008", "60342002", "106002000", "2704003", "782964007", "118934005", "40733004"], "404684003": ["118254002", "118222006", "246556002", "298325004", "64572001"], "719848005": ["135311000119100"], "80690008": ["52522001", "106018006"], "362965005": ["118940003", "363137000"], "81308009": ["128614008", "270487001", "52522001"], "782964007": ["32895009"], "138875005": ["404684003"], "106018006": ["83157008"], "418475009": ["91411000119105", "724732000"], "406122000": ["299718000", "118934005"], "724732000": ["135311000119100"], "74732009": ["24121004", "111475002", "288421000119100"], "106002000": ["266607004"], "39898005": ["270487001", "44186003", "58690002", "363314000", "194437008"], "23853001": ["80690008", "128117002", "81308009"], "246556002": ["299718000", "23853001"], "31297008": ["425832009"], "67062000": ["401236004"], "127324008": ["34101000119105"], "90361000119105": ["288081000119106", "288101000119104", "288091000119109"], "128116006": ["128117002"], "248256006": ["288421000119100", "105491000119107"], "1187219008": ["719848005", "724732000"], "363166002": ["128614008"], "128614008": ["20484008"], "106168000": ["39898005"], "34101000119105": ["93681000119102"], "363137000": ["363235000"], "362975008": ["80690008"], "299718000": ["81308009"], "118222006": ["106168000"], "266607004": ["198437004"], "118254002": ["406122000"], "60342002": ["127324008"], "118934005": ["81308009", "363166002"], "52522001": ["20484008"], "20484008": ["83157008"], "58690002": ["34101000119105"], "118940003": ["363235000", "127324008", "23853001", "128116006"], "363235000": ["106018006"], "194437008": ["193462001"], "298325004": ["60342002"], "27624003": ["724748004"], "32895009": ["363137000"], "128117002": ["128614008"], "270487001": ["192454004"], "44186003": ["193462001"], "111475002": ["31297008"], "91411000119105": ["135311000119100"], "363314000": ["418475009"]}</script>
+<script id="is-editable" type="application/json">false</script>
+<script id="draft-url" type="application/json">"/builder/3b969747/"</script>
+<script id="update-url" type="application/json">"/builder/3b969747/update/"</script>
+<script id="search-url" type="application/json">"/builder/3b969747/search/"</script>
+<script id="versions" type="application/json">[]</script>
+<script id="metadata" type="application/json">{"coding_system_name": "SNOMED CT", "coding_system_release": {"release_name": "35.6.0", "valid_from": "2023-03-22"}, "organisation_name": null, "codelist_full_slug": "user/RachelS99/dfm-disorders-insomnia", "hash": "3b969747"}</script>
+<script src="/static/js/builder.bundle.js"></script>
+</main>
+<footer id="footer" class="border-top bg-light mt-auto py-5">
+<div class="container">
+<ul class="list-inline text-center d-flex flex-column flex-md-row justify-content-center mb-0 mb-md-3">
+<li class="list-inline-item mb-3 mb-md-0 mr-0 mr-md-5">
+<a href="/docs/">
+Documentation
+</a>
+</li>
+<li class="list-inline-item mb-3 mb-md-0 mr-0">
+<a href="https://www.opensafely.org/">
+OpenSAFELY
+</a>
+</li>
+</ul>
+<ul class="list-inline text-center d-flex flex-column flex-md-row justify-content-center">
+<li class="list-inline-item mb-3 mb-md-0 mr-0 mr-md-5">
+<a href="https://www.bennett.ox.ac.uk/">
+Bennett Institute for Applied Data Science
+</a>
+</li>
+<li class="list-inline-item mb-3 mb-md-0">
+<a href="https://www.ox.ac.uk/">
+University of Oxford
+</a>
+</li>
+</ul>
+ <div class="row">
+<div class="col-12 offset-md-1 col-md-10 offset-lg-2 col-lg-8 text-center mt-3 mb-0 small">
+<p>© University of Oxford for the Bennett Institute for Applied Data Science 2022. This work may be copied freely for non-commercial research and study. If you wish to do any of the other acts restricted by the copyright you should apply in writing to <a href="/cdn-cgi/l/email-protection#daaebfbbb79ab5aabfb4a9bbbcbfb6a3f4b5a8bd"><span class="__cf_email__" data-cfemail="9de9f8fcf0ddf2edf8f3eefcfbf8f1e4b3f2effa">[email&#160;protected]</span></a>.</p>
+<p>SNOMED Clinical Terms® content © International Health Terminology Standards Development Organisation.</p>
+<p>ICD-10 codes, terms and text © World Health Organization, Third Edition. 2007.</p>
+</div>
+</div>
+</div>
+</footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>

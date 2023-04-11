@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap" /></noscript>
+<style>
+      html {
+        position: relative;
+        min-height: 100%;
+      }
+
+      body {
+        font-family: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        margin-bottom: 120px;
+      }
+
+      nav.bg-secondary {
+        background-color: #002147 !important;
+      }
+
+      a {
+        color: #0058be;
+        font-weight: 600;
+        text-decoration-skip-ink: auto;
+        text-underline-offset: 1px;
+      }
+
+      a:hover,
+      a:focus {
+        color: #00397a;
+        text-decoration: underline;
+        text-decoration-color: #001936;
+      }
+
+      .home-codelists dd {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .home-codelists dt {
+        font-size: 1.1rem;
+      }
+
+      .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 80px;
+        padding-top: 20px;
+        line-height: 20px;
+        background-color: #f5f5f5;
+      }
+
+      .footer p {
+        margin-bottom: 0;
+      }
+    </style>
+<script src="https://kit.fontawesome.com/7e05304e34.js" crossorigin="anonymous"></script>
+<script>
+      if (document.location.hostname === "www.opencodelists.org") {
+        var script = document.createElement("script");
+        script.defer = true;
+        script.setAttribute("data-domain", "opencodelists.org");
+        script.id = "plausible";
+        script.src = "https://plausible.io/js/plausible.compat.js";
+        document.head.appendChild(script);
+      }
+    </script>
+<title>OpenCodelists</title>
+<link rel="icon" href="/static/favicon.ico">
+<link rel="icon" href="/static/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/static/apple-touch-icon.png">
+<link rel="manifest" href="/static/manifest.webmanifest">
+</head>
+<body class="d-flex flex-column h-100">
+<nav class="navbar navbar-expand-sm navbar-dark bg-secondary justify-content-between align-items-baseline">
+<div class="mr-auto">
+<a class="navbar-brand" href="/">OpenCodelists</a
+        >
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+</div>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav ml-auto">
+<li class="navbar-nav nav-item">
+<a class="nav-link text-white" href="/docs/">Docs</a>
+</li>
+<li class="navbar-nav nav-item">
+<a class="nav-link text-white" href="/accounts/register/">Sign up</a>
+</li>
+<li class="navbar-nav nav-item">
+<a class="nav-link text-white" href="/accounts/login/">Sign in</a>
+</li>
+</ul>
+</div>
+</nav>
+<main role="main" class="flex-shrink-0 container mb-5">
+<div class="mt-4">
+<h3 class="mt-4">DFM Disorders - muscle spasm of head and/or neck</h3>
+<p class="text-muted">This version is a draft</p>
+<hr />
+<div id="codelist-builder-container"></div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js" integrity="sha512-/DXTXr6nQodMUiq+IUJYCt2PPOUjrHJ9wFrqpJ3XkgPNOZVfMok7cRw6CSxyCQxXn6ozlESsSh1/sMCTF1rL/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js" integrity="sha512-wV7Yj1alIZDqZFCUQJy85VN+qvEIly93fIQAN7iqDFCPEucLCeNFz4r35FCo9s6WrpdDQPi80xbljXB8Bjtvcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+<script id="results-heading" type="application/json">"Showing all matching concepts"</script>
+<script id="searches" type="application/json">[{"term_or_code": "code: 95418008", "url": "/builder/0977b0dd/search/code:95418008/", "delete_url": "/builder/0977b0dd/search/code:95418008/delete/", "active": false}]</script>
+<script id="filter" type="application/json">null</script>
+<script id="tree-tables" type="application/json">[["Disorder", ["95418008"]]]</script>
+<script id="code-to-term" type="application/json">{"15631251000119109": "Blepharospasm of right eyelid", "15631291000119104": "Blepharospasm of left eyelid", "15631331000119105": "Blepharospasm of bilateral eyelids", "230324004": "Isolated blepharospasm", "232407000": "Pharyngeal spasm", "301000119104": "Muscle spasm of cervical muscle of neck", "406444002": "Laryngeal spasm", "423753005": "Reflex blepharospasm", "59026006": "Blepharospasm", "702600000": "Myospasm of masticatory muscle", "712647003": "Spasmodic torticollis due to infection", "71363005": "Spasm of the cricopharyngeus muscle", "713956000": "Spasmodic torticollis as late effect of trauma", "74333002": "Spasmodic torticollis", "95418008": "Muscle spasm of head and/or neck"}</script>
+<script id="code-to-status" type="application/json">{"74333002": "(+)", "702600000": "(+)", "71363005": "(+)", "95418008": "+", "15631331000119105": "(+)", "232407000": "(+)", "713956000": "(+)", "15631291000119104": "(+)", "15631251000119109": "(+)", "230324004": "(+)", "301000119104": "(+)", "406444002": "(+)", "423753005": "(+)", "712647003": "(+)", "59026006": "(+)"}</script>
+<script id="all-codes" type="application/json">["74333002", "702600000", "71363005", "95418008", "15631331000119105", "232407000", "713956000", "15631291000119104", "15631251000119109", "230324004", "301000119104", "406444002", "423753005", "712647003", "59026006"]</script>
+<script id="included-codes" type="application/json">["95418008"]</script>
+<script id="excluded-codes" type="application/json">[]</script>
+<script id="parent-map" type="application/json">{"15631251000119109": ["59026006"], "60113004": ["118930001", "118941004", "246812007"], "702600000": ["95418008", "118930001"], "106030000": ["404684003"], "118254002": ["404684003"], "362965005": ["64572001"], "118939000": ["64572001", "298378000"], "298364001": ["406122000"], "300284004": ["406123005", "386618008"], "298325004": ["404684003"], "301000119104": ["95418008", "111235007"], "45352006": ["106030000"], "71363005": ["235631007", "232407000"], "84410009": ["53619000"], "118940003": ["362965005"], "60600009": ["271748007", "201060008", "118939000"], "64309007": ["73013002", "118254002", "302226006"], "406123005": ["404684003"], "60342002": ["298325004", "64572001"], "299718000": ["406122000", "246556002"], "235631007": ["75860007", "37657006", "111235007", "75047002"], "302226006": ["42658009", "386033004", "19660004", "246605000"], "118941004": ["371409005"], "81308009": ["299718000", "23853001", "118934005"], "248402002": ["404684003"], "201060008": ["50043002", "232208008", "301186004"], "271748007": ["298378000", "301186004"], "371409005": ["298364001", "118934005", "128127008"], "246556002": ["404684003"], "713956000": ["14817008", "87536007", "74333002"], "75860007": ["50410009", "116338005", "201060008", "76712006"], "423753005": ["257277002", "64309007", "59026006"], "50043002": ["106048009", "362965005"], "406122000": ["118254002"], "301186004": ["106048009", "297268004"], "74333002": ["95418008", "111235007", "230322000"], "76349003": ["81308009", "60342002"], "119292006": ["84410009", "386618008"], "111235007": ["928000", "118939000"], "95418008": ["118254002", "75047002", "45352006"], "128127008": ["118235002", "362965005"], "15631331000119105": ["15631291000119104", "15631251000119109"], "37657006": ["300284004", "76712006", "119291004"], "301310005": ["298364001"], "232407000": ["75860007", "95418008", "111235007"], "75047002": ["19660004", "928000", "129565002"], "23853001": ["118940003", "246556002"], "928000": ["106028002", "362965005"], "386033004": ["118940003"], "232208008": ["297268004", "64572001"], "119291004": ["119292006", "50410009"], "15631291000119104": ["59026006"], "129565002": ["64572001", "106030000"], "19660004": ["64572001", "248402002"], "118930001": ["301310005", "118934005"], "406444002": ["95418008", "111235007", "60600009"], "106048009": ["404684003"], "712647003": ["87536007", "74333002"], "59026006": ["60113004", "95418008", "445006008"], "230324004": ["59026006"], "246812007": ["118235002", "301310005"], "302049001": ["64572001"], "64572001": ["404684003"], "404684003": ["138875005"], "118934005": ["64572001", "406122000"], "42658009": ["118940003"], "230322000": ["445006008"], "386618008": ["386617003"], "257277002": ["42658009", "75047002"], "246605000": ["248402002"], "50410009": ["84410009"], "73013002": ["386033004"], "445006008": ["15802004"], "76712006": ["53619000"], "118235002": ["404684003"], "106028002": ["404684003"], "53619000": ["386617003", "362965005"], "15802004": ["76349003"], "298378000": ["118254002"], "297268004": ["118254002"], "386617003": ["404684003"], "87536007": ["23853001"], "116338005": ["386617003", "301186004"], "14817008": ["302049001"]}</script>
+<script id="child-map" type="application/json">{"59026006": ["423753005", "15631291000119104", "15631251000119109", "230324004"], "246812007": ["60113004"], "95418008": ["74333002", "702600000", "232407000", "301000119104", "406444002", "59026006"], "404684003": ["118235002", "386617003", "118254002", "298325004", "106048009", "106030000", "246556002", "248402002", "106028002", "406123005", "64572001"], "64572001": ["362965005", "118939000", "19660004", "302049001", "60342002", "118934005", "232208008", "129565002"], "406122000": ["298364001", "299718000", "118934005"], "406123005": ["300284004"], "106030000": ["45352006", "129565002"], "235631007": ["71363005"], "53619000": ["76712006", "84410009"], "362965005": ["53619000", "128127008", "50043002", "118940003", "928000"], "271748007": ["60600009"], "118254002": ["95418008", "297268004", "406122000", "298378000", "64309007"], "232407000": ["71363005"], "386618008": ["119292006", "300284004"], "246556002": ["299718000", "23853001"], "111235007": ["74333002", "232407000", "301000119104", "406444002", "235631007"], "246605000": ["302226006"], "371409005": ["118941004"], "23853001": ["81308009", "87536007"], "118930001": ["60113004", "702600000"], "232208008": ["201060008"], "298378000": ["271748007", "118939000"], "298364001": ["371409005", "301310005"], "74333002": ["713956000", "712647003"], "116338005": ["75860007"], "257277002": ["423753005"], "106048009": ["50043002", "301186004"], "81308009": ["76349003"], "84410009": ["119292006", "50410009"], "87536007": ["713956000", "712647003"], "928000": ["111235007", "75047002"], "75047002": ["95418008", "235631007", "257277002"], "298325004": ["60342002"], "230322000": ["74333002"], "118235002": ["128127008", "246812007"], "15631291000119104": ["15631331000119105"], "76712006": ["75860007", "37657006"], "60342002": ["76349003"], "75860007": ["235631007", "232407000"], "14817008": ["713956000"], "129565002": ["75047002"], "128127008": ["371409005"], "118940003": ["42658009", "386033004", "23853001"], "119292006": ["119291004"], "118934005": ["81308009", "118930001", "371409005"], "60600009": ["406444002"], "37657006": ["235631007"], "297268004": ["232208008", "301186004"], "301310005": ["118930001", "246812007"], "445006008": ["59026006", "230322000"], "201060008": ["75860007", "60600009"], "60113004": ["59026006"], "19660004": ["75047002", "302226006"], "50410009": ["75860007", "119291004"], "138875005": ["404684003"], "118939000": ["111235007", "60600009"], "386617003": ["386618008", "53619000", "116338005"], "50043002": ["201060008"], "248402002": ["19660004", "246605000"], "118941004": ["60113004"], "302226006": ["64309007"], "386033004": ["73013002", "302226006"], "15802004": ["445006008"], "42658009": ["257277002", "302226006"], "301186004": ["271748007", "116338005", "201060008"], "299718000": ["81308009"], "15631251000119109": ["15631331000119105"], "300284004": ["37657006"], "76349003": ["15802004"], "106028002": ["928000"], "119291004": ["37657006"], "73013002": ["64309007"], "45352006": ["95418008"], "302049001": ["14817008"], "64309007": ["423753005"]}</script>
+<script id="is-editable" type="application/json">false</script>
+<script id="draft-url" type="application/json">"/builder/0977b0dd/"</script>
+<script id="update-url" type="application/json">"/builder/0977b0dd/update/"</script>
+<script id="search-url" type="application/json">"/builder/0977b0dd/search/"</script>
+<script id="versions" type="application/json">[]</script>
+<script id="metadata" type="application/json">{"coding_system_name": "SNOMED CT", "coding_system_release": {"release_name": "35.6.0", "valid_from": "2023-03-22"}, "organisation_name": null, "codelist_full_slug": "user/RachelS99/dfm-disorders-muscle-spasm-of-head-andor-neck", "hash": "0977b0dd"}</script>
+<script src="/static/js/builder.bundle.js"></script>
+</main>
+<footer id="footer" class="border-top bg-light mt-auto py-5">
+<div class="container">
+<ul class="list-inline text-center d-flex flex-column flex-md-row justify-content-center mb-0 mb-md-3">
+<li class="list-inline-item mb-3 mb-md-0 mr-0 mr-md-5">
+<a href="/docs/">
+Documentation
+</a>
+</li>
+<li class="list-inline-item mb-3 mb-md-0 mr-0">
+<a href="https://www.opensafely.org/">
+OpenSAFELY
+</a>
+</li>
+</ul>
+<ul class="list-inline text-center d-flex flex-column flex-md-row justify-content-center">
+<li class="list-inline-item mb-3 mb-md-0 mr-0 mr-md-5">
+<a href="https://www.bennett.ox.ac.uk/">
+Bennett Institute for Applied Data Science
+</a>
+</li>
+<li class="list-inline-item mb-3 mb-md-0">
+<a href="https://www.ox.ac.uk/">
+University of Oxford
+</a>
+</li>
+</ul>
+<div class="row">
+<div class="col-12 offset-md-1 col-md-10 offset-lg-2 col-lg-8 text-center mt-3 mb-0 small">
+<p>© University of Oxford for the Bennett Institute for Applied Data Science 2022. This work may be copied freely for non-commercial research and study. If you wish to do any of the other acts restricted by the copyright you should apply in writing to <a href="/cdn-cgi/l/email-protection#691d0c08042906190c071a080f0c051047061b0e"><span class="__cf_email__" data-cfemail="5c28393d311c332c39322f3d3a39302572332e3b">[email&#160;protected]</span></a>.</p>
+<p>SNOMED Clinical Terms® content © International Health Terminology Standards Development Organisation.</p>
+<p>ICD-10 codes, terms and text © World Health Organization, Third Edition. 2007.</p>
+</div>
+</div>
+</div>
+</footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>

@@ -13,7 +13,52 @@ dfm_codes = codelist_from_csv(
 
 # Indications for prescribing dependence forming medications
 ind_codes = codelist_from_csv(
-    "codelists/user-RachelS99-indications-for-dependency-medications.csv",
+    "codelists/user-RachelS99-dfm-disorders-all.csv",
+    system="snomed",
+)
+
+ind_codes_alcoholism = codelist_from_csv(
+    "codelists/user-RachelS99-disorders-alcohol-dependence.csv",
+    system="snomed",
+)
+
+ind_codes_anxiety = codelist_from_csv(
+    "codelists/user-RachelS99-disorders-anxiety-disorder.csv",
+    system="snomed",
+)
+
+ind_codes_pain = codelist_from_csv(
+    "codelists/user-RachelS99-disorders-chronic-pain-syndrome.csv",
+    system="snomed",
+)
+
+ind_codes_insomnia = codelist_from_csv(
+    "codelists/user-RachelS99-disorders-insomnia.csv",
+    system="snomed",
+)
+
+ind_codes_mental = codelist_from_csv(
+    "codelists/user-RachelS99-disorders-mental-disorder.csv",
+    system="snomed",
+)
+
+ind_codes_spasm = codelist_from_csv(
+    "codelists/user-RachelS99-disorders-muscle-spasm-of-head-andor-neck.csv",
+    system="snomed",
+)
+
+ind_codes_neurological = codelist_from_csv(
+    "codelists/user-RachelS99-disorders-neurological-pain-disorder.csv",
+    system="snomed",
+)
+
+ind_codes_sciatica = codelist_from_csv(
+    "codelists/user-RachelS99-disorders-sciatic-neuropathy.csv",
+    system="snomed",
+)
+
+ind_codes_covid = codelist_from_csv(
+    "codelists/user-RachelS99-disorders-post-acute-covid-19.csv",
     system="snomed",
 )
 

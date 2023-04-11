@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap" /></noscript>
+<style>
+      html {
+        position: relative;
+        min-height: 100%;
+      }
+
+      body {
+        font-family: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        margin-bottom: 120px;
+      }
+
+      nav.bg-secondary {
+        background-color: #002147 !important;
+      }
+
+      a {
+        color: #0058be;
+        font-weight: 600;
+        text-decoration-skip-ink: auto;
+        text-underline-offset: 1px;
+      }
+
+      a:hover,
+      a:focus {
+        color: #00397a;
+        text-decoration: underline;
+        text-decoration-color: #001936;
+      }
+
+      .home-codelists dd {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .home-codelists dt {
+        font-size: 1.1rem;
+      }
+
+      .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 80px;
+        padding-top: 20px;
+        line-height: 20px;
+        background-color: #f5f5f5;
+      }
+
+      .footer p {
+        margin-bottom: 0;
+      }
+    </style>
+<script src="https://kit.fontawesome.com/7e05304e34.js" crossorigin="anonymous"></script>
+<script>
+      if (document.location.hostname === "www.opencodelists.org") {
+        var script = document.createElement("script");
+        script.defer = true;
+        script.setAttribute("data-domain", "opencodelists.org");
+        script.id = "plausible";
+        script.src = "https://plausible.io/js/plausible.compat.js";
+        document.head.appendChild(script);
+      }
+    </script>
+<title>OpenCodelists</title>
+<link rel="icon" href="/static/favicon.ico">
+<link rel="icon" href="/static/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/static/apple-touch-icon.png">
+<link rel="manifest" href="/static/manifest.webmanifest">
+</head>
+<body class="d-flex flex-column h-100">
+<nav class="navbar navbar-expand-sm navbar-dark bg-secondary justify-content-between align-items-baseline">
+<div class="mr-auto">
+<a class="navbar-brand" href="/">OpenCodelists</a
+        >
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+</div>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav ml-auto">
+<li class="navbar-nav nav-item">
+<a class="nav-link text-white" href="/docs/">Docs</a>
+</li>
+<li class="navbar-nav nav-item">
+<a class="nav-link text-white" href="/accounts/register/">Sign up</a>
+</li>
+<li class="navbar-nav nav-item">
+<a class="nav-link text-white" href="/accounts/login/">Sign in</a>
+</li>
+</ul>
+</div>
+</nav>
+<main role="main" class="flex-shrink-0 container mb-5">
+<div class="mt-4">
+<h3 class="mt-4">DFM Disorders - chronic pain syndrome</h3>
+<p class="text-muted">This version is a draft</p>
+<hr />
+<div id="codelist-builder-container"></div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js" integrity="sha512-/DXTXr6nQodMUiq+IUJYCt2PPOUjrHJ9wFrqpJ3XkgPNOZVfMok7cRw6CSxyCQxXn6ozlESsSh1/sMCTF1rL/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js" integrity="sha512-wV7Yj1alIZDqZFCUQJy85VN+qvEIly93fIQAN7iqDFCPEucLCeNFz4r35FCo9s6WrpdDQPi80xbljXB8Bjtvcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+<script id="results-heading" type="application/json">"Showing all matching concepts"</script>
+<script id="searches" type="application/json">[{"term_or_code": "code: 373621006", "url": "/builder/54a60a7c/search/code:373621006/", "delete_url": "/builder/54a60a7c/search/code:373621006/delete/", "active": false}]</script>
+<script id="filter" type="application/json">null</script>
+<script id="tree-tables" type="application/json">[["Disorder", ["373621006"]]]</script>
+<script id="code-to-term" type="application/json">{"128200000": "Complex regional pain syndrome", "291761000119107": "Complex regional pain syndrome type II of left upper limb", "291771000119101": "Complex regional pain syndrome type II of right upper limb", "291781000119103": "Complex regional pain syndrome type II of left lower limb", "291791000119100": "Complex regional pain syndrome type II of right lower limb", "293921000119104": "Complex regional pain syndrome type I of bilateral upper limbs", "293931000119101": "Complex regional pain syndrome type I of left lower limb", "293941000119105": "Complex regional pain syndrome type I of left upper limb", "293951000119107": "Complex regional pain syndrome type I of bilateral lower limbs", "293961000119109": "Complex regional pain syndrome type I of right lower limb", "293971000119103": "Complex regional pain syndrome type I of right upper limb", "373621006": "Chronic pain syndrome", "408749000": "Complex regional pain syndrome, type II, lower limb", "408750000": "Complex regional pain syndrome, type II, upper limb", "408751001": "Complex regional pain syndrome, type II", "426135001": "Chronic prostatitis - chronic pelvic pain syndrome", "712537009": "Complex regional pain syndrome of upper limb", "734947007": "Complex regional pain syndrome type I", "734986006": "Complex regional pain syndrome of lower limb", "734987002": "Complex regional pain syndrome of foot", "734988007": "Complex regional pain syndrome of knee", "734989004": "Complex regional pain syndrome of hand", "737305006": "Primary chronic pain", "737306007": "Chronic visceral pain", "762589002": "Chronic primary visceral pain", "762599007": "Chronic mechanical visceral pain", "762600005": "Chronic visceral pain due to vascular disorder", "762601009": "Chronic visceral pain due to persistent inflammation"}</script>
+<script id="code-to-status" type="application/json">{"712537009": "(+)", "293961000119109": "(+)", "734988007": "(+)", "737306007": "(+)", "737305006": "(+)", "291761000119107": "(+)", "734947007": "(+)", "426135001": "(+)", "762601009": "(+)", "291771000119101": "(+)", "762599007": "(+)", "408751001": "(+)", "408750000": "(+)", "762589002": "(+)", "293971000119103": "(+)", "293921000119104": "(+)", "291781000119103": "(+)", "408749000": "(+)", "734986006": "(+)", "293941000119105": "(+)", "762600005": "(+)", "373621006": "+", "734987002": "(+)", "293931000119101": "(+)", "293951000119107": "(+)", "128200000": "(+)", "734989004": "(+)", "291791000119100": "(+)"}</script>
+<script id="all-codes" type="application/json">["712537009", "293961000119109", "734988007", "737306007", "737305006", "291761000119107", "734947007", "426135001", "762601009", "291771000119101", "762599007", "408751001", "408750000", "762589002", "293971000119103", "293921000119104", "291781000119103", "408749000", "734986006", "293941000119105", "762600005", "373621006", "734987002", "291791000119100", "293931000119101", "128200000", "734989004", "293951000119107"]</script>
+<script id="included-codes" type="application/json">["373621006"]</script>
+<script id="excluded-codes" type="application/json">[]</script>
+<script id="parent-map" type="application/json">{"700012005": ["118937003"], "127279002": ["417163006", "118937003"], "408749000": ["297946004", "408751001", "129136002", "734986006"], "116314006": ["116312005"], "408750000": ["297945000", "408751001", "712537009", "129135003"], "362965005": ["64572001"], "118933004": ["118947000", "116311003"], "712537009": ["609599003", "128200000", "102556003"], "42030000": ["118238000", "362965005", "822988000"], "737306007": ["373621006", "406123005", "279001004"], "239953001": ["19660004"], "111985007": ["82423001", "21522001"], "11865081000119107": ["127279002", "451431000124104"], "406123005": ["404684003"], "300534007": ["249604002", "247330004"], "300479008": ["118238000"], "127278005": ["118947000", "417163006"], "293931000119101": ["292511000119106", "734947007", "287047008", "734986006"], "10601006": ["90834002", "713314006"], "302226006": ["42658009", "386033004", "19660004", "246605000"], "291761000119107": ["291861000119103", "408750000", "15743561000119103"], "280136002": ["280134004", "118937003"], "734989004": ["53057004", "712537009", "280135003", "118933004"], "249230006": ["300479008", "609625009"], "128239009": ["417163006", "118940003"], "128478005": ["363169009", "64557000", "373406006"], "249604002": ["609624008", "609626005", "249230006"], "30281009": ["249604002", "64557000", "118948005", "609620004"], "248402002": ["404684003"], "129135003": ["609599003", "73590005", "127278005"], "129136002": ["127279002", "609600000", "73590005"], "106147001": ["102957003"], "16026551000119108": ["292511000119106", "292501000119108"], "73590005": ["282026002", "57182000", "302226006"], "128121009": ["302292003", "64572001"], "11865041000119102": ["127279002", "451421000124102"], "276435006": ["106147001"], "116312005": ["302293008"], "282026002": ["417163006", "19660004"], "363170005": ["128139000"], "118932009": ["116316008", "700012005"], "426135001": ["373621006", "111985007", "36729000", "19905009"], "785875003": ["64572001"], "373621006": ["27624003", "82423001"], "280135003": ["118947000", "280134004"], "30473006": ["609625009", "301366005"], "408751001": ["128200000", "128239009", "299735001"], "118937003": ["128605003", "116312005"], "293921000119104": ["16002671000119106", "16026511000119107", "293941000119105", "293971000119103"], "297945000": ["609599003", "239953001", "299735001"], "734986006": ["128200000", "609600000", "10601006"], "116307009": ["302293008"], "9713002": ["30281009", "128478005"], "19660004": ["64572001", "248402002"], "734987002": ["47933007", "118932009", "734986006"], "21522001": ["247330004", "301366005"], "16026511000119107": ["291861000119103", "291871000119109"], "297946004": ["609600000", "239953001", "299735001"], "16002671000119106": ["15743521000119108", "15743561000119103"], "302293008": ["404684003"], "128200000": ["373621006", "42658009", "279001004", "128283000"], "293971000119103": ["15743521000119108", "734947007", "712537009", "291871000119109"], "609619005": ["609625009", "822988000"], "128283000": ["118940003", "27624003"], "363194005": ["609619005", "362968007", "249230006"], "291781000119103": ["292511000119106", "408749000", "287047008", "11865081000119107"], "762599007": ["9626006", "737306007"], "451421000124102": ["118937003"], "609599003": ["118947000", "302226006"], "404684003": ["138875005"], "64557000": ["363194005"], "42658009": ["118940003"], "298750003": ["116307009", "699697007"], "609626005": ["609625009"], "19905009": ["9713002", "128290005"], "292511000119106": ["609600000", "451431000124104"], "15743561000119103": ["82423001", "287045000"], "363171009": ["362965005", "363170005"], "451411000124105": ["118947000"], "713314006": ["116312005", "699697007"], "57182000": ["386033004", "128239009"], "291771000119101": ["15743521000119108", "408750000", "291871000119109"], "291791000119100": ["287048003", "408749000", "11865041000119102", "292501000119108"], "287047008": ["10601006"], "82423001": ["22253000"], "128136007": ["785875003", "700012005", "116314006"], "373406006": ["42030000", "363171009"], "90834002": ["302293008", "279001004"], "419518009": ["116312005"], "293941000119105": ["291861000119103", "712537009", "734947007", "15743561000119103"], "280134004": ["128605003", "19660004"], "451401000124107": ["118947000"], "292501000119108": ["609600000", "451421000124102"], "293961000119109": ["734947007", "734986006", "287048003", "292501000119108"], "247330004": ["609624008", "699697007"], "279020002": ["162138001", "249230006"], "734988007": ["1003722009", "128136007", "734986006"], "128605003": ["64572001", "302293008"], "822988000": ["128121009", "822987005"], "9626006": ["22253000"], "36729000": ["300534007", "279020002", "21522001"], "102556003": ["90834002", "298750003"], "301366005": ["302292003", "279001004"], "118940003": ["362965005"], "291871000119109": ["609599003", "451401000124107"], "451431000124104": ["118937003"], "699697007": ["106147001"], "128290005": ["27624003", "42030000"], "118948005": ["609624008", "822988000"], "47933007": ["116316008", "10601006"], "162138001": ["30473006", "118238000"], "287046004": ["102556003"], "118947000": ["116307009", "128605003"], "1003722009": ["10601006", "116314006"], "293951000119107": ["293961000119109", "16026551000119108", "293931000119101"], "762600005": ["737306007"], "362968007": ["42030000"], "27624003": ["64572001"], "822987005": ["302292003"], "609620004": ["609619005", "609626005"], "279001004": ["22253000", "699697007"], "386033004": ["118940003"], "287048003": ["10601006"], "15743521000119108": ["287046004", "82423001"], "609625009": ["822987005"], "299735001": ["404684003"], "53057004": ["116311003", "102556003"], "64572001": ["404684003"], "737305006": ["373621006"], "246605000": ["248402002"], "291861000119103": ["451411000124105", "609599003"], "116316008": ["419518009"], "102957003": ["404684003"], "609600000": ["280136002", "302226006"], "22253000": ["276435006"], "417163006": ["64572001"], "762589002": ["737306007"], "116311003": ["116307009"], "287045000": ["102556003"], "302292003": ["404684003"], "609624008": ["822987005"], "762601009": ["737306007"], "363169009": ["363170005"], "118238000": ["822987005"], "734947007": ["128200000"], "128139000": ["64572001"]}</script>
+<script id="child-map" type="application/json">{"118937003": ["451431000124104", "451421000124102", "127279002", "280136002", "700012005"], "417163006": ["127279002", "127278005", "282026002", "128239009"], "734986006": ["293961000119109", "734988007", "734987002", "293931000119101", "408749000"], "116312005": ["419518009", "713314006", "118937003", "116314006"], "712537009": ["293971000119103", "408750000", "293941000119105", "734989004"], "64572001": ["128605003", "417163006", "27624003", "128139000", "362965005", "19660004", "785875003", "128121009"], "116311003": ["53057004", "118933004"], "609599003": ["297945000", "712537009", "291861000119103", "291871000119109", "129135003"], "362965005": ["118940003", "42030000", "363171009"], "279001004": ["737306007", "128200000", "90834002", "301366005"], "19660004": ["280134004", "282026002", "239953001", "302226006"], "21522001": ["111985007", "36729000"], "127279002": ["129136002", "11865041000119102", "11865081000119107"], "404684003": ["102957003", "302293008", "248402002", "406123005", "302292003", "64572001", "299735001"], "249604002": ["300534007", "30281009"], "118238000": ["162138001", "300479008", "42030000"], "118947000": ["118933004", "451401000124107", "451411000124105", "609599003", "280135003", "127278005"], "287047008": ["293931000119101", "291781000119103"], "713314006": ["10601006"], "373621006": ["426135001", "128200000", "737305006", "737306007"], "246605000": ["302226006"], "15743561000119103": ["291761000119107", "16002671000119106", "293941000119105"], "280135003": ["734989004"], "609625009": ["30473006", "609619005", "609626005", "249230006"], "451431000124104": ["292511000119106", "11865081000119107"], "64557000": ["30281009", "128478005"], "609624008": ["249604002", "247330004", "118948005"], "300479008": ["249230006"], "609620004": ["30281009"], "127278005": ["129135003"], "609600000": ["292511000119106", "129136002", "292501000119108", "297946004", "734986006"], "102957003": ["106147001"], "292501000119108": ["293961000119109", "16026551000119108", "291791000119100"], "57182000": ["73590005"], "302292003": ["128121009", "822987005", "301366005"], "292511000119106": ["16026551000119108", "293931000119101", "291781000119103"], "106147001": ["276435006", "699697007"], "302293008": ["116307009", "116312005", "90834002", "128605003"], "128139000": ["363170005"], "408750000": ["291761000119107", "291771000119101"], "700012005": ["128136007", "118932009"], "297945000": ["408750000"], "111985007": ["426135001"], "249230006": ["249604002", "363194005", "279020002"], "27624003": ["373621006", "128283000", "128290005"], "280134004": ["280136002", "280135003"], "301366005": ["30473006", "21522001"], "128200000": ["408751001", "712537009", "734947007", "734986006"], "128605003": ["118947000", "280134004", "118937003"], "16002671000119106": ["293921000119104"], "239953001": ["297945000", "297946004"], "128478005": ["9713002"], "118932009": ["734987002"], "291861000119103": ["291761000119107", "16026511000119107", "293941000119105"], "408751001": ["408750000", "408749000"], "299735001": ["297946004", "297945000", "408751001"], "129135003": ["408750000"], "247330004": ["300534007", "21522001"], "42658009": ["128200000", "302226006"], "15743521000119108": ["293971000119103", "16002671000119106", "291771000119101"], "822988000": ["609619005", "118948005", "42030000"], "82423001": ["373621006", "111985007", "15743561000119103", "15743521000119108"], "609619005": ["363194005", "609620004"], "408749000": ["291781000119103", "291791000119100"], "734947007": ["293971000119103", "293961000119109", "293941000119105", "293931000119101"], "9626006": ["762599007"], "11865081000119107": ["291781000119103"], "138875005": ["404684003"], "363194005": ["64557000"], "118940003": ["42658009", "386033004", "128239009", "128283000"], "16026511000119107": ["293921000119104"], "116307009": ["118947000", "116311003", "298750003"], "248402002": ["19660004", "246605000"], "9713002": ["19905009"], "297946004": ["408749000"], "19905009": ["426135001"], "699697007": ["247330004", "298750003", "713314006", "279001004"], "386033004": ["57182000", "302226006"], "291871000119109": ["293971000119103", "16026511000119107", "291771000119101"], "287048003": ["293961000119109", "291791000119100"], "10601006": ["1003722009", "287048003", "287047008", "47933007", "734986006"], "22253000": ["82423001", "9626006", "279001004"], "73590005": ["129135003", "129136002"], "42030000": ["362968007", "373406006", "128290005"], "406123005": ["737306007"], "128283000": ["128200000"], "451421000124102": ["11865041000119102", "292501000119108"], "53057004": ["734989004"], "363170005": ["363169009", "363171009"], "162138001": ["279020002"], "287045000": ["15743561000119103"], "116316008": ["47933007", "118932009"], "116314006": ["1003722009", "128136007"], "363171009": ["373406006"], "128121009": ["822988000"], "302226006": ["609599003", "609600000", "73590005"], "279020002": ["36729000"], "90834002": ["10601006", "102556003"], "128239009": ["408751001", "57182000"], "36729000": ["426135001"], "282026002": ["73590005"], "128136007": ["734988007"], "102556003": ["53057004", "712537009", "287046004", "287045000"], "737306007": ["762599007", "762601009", "762589002", "762600005"], "47933007": ["734987002"], "16026551000119108": ["293951000119107"], "822987005": ["609624008", "118238000", "609625009", "822988000"], "293961000119109": ["293951000119107"], "451401000124107": ["291871000119109"], "373406006": ["128478005"], "300534007": ["36729000"], "30281009": ["9713002"], "298750003": ["102556003"], "11865041000119102": ["291791000119100"], "785875003": ["128136007"], "363169009": ["128478005"], "287046004": ["15743521000119108"], "118933004": ["734989004"], "128290005": ["19905009"], "293931000119101": ["293951000119107"], "609626005": ["249604002", "609620004"], "362968007": ["363194005"], "419518009": ["116316008"], "280136002": ["609600000"], "293941000119105": ["293921000119104"], "276435006": ["22253000"], "129136002": ["408749000"], "118948005": ["30281009"], "293971000119103": ["293921000119104"], "1003722009": ["734988007"], "451411000124105": ["291861000119103"], "30473006": ["162138001"]}</script>
+<script id="is-editable" type="application/json">false</script>
+<script id="draft-url" type="application/json">"/builder/54a60a7c/"</script>
+<script id="update-url" type="application/json">"/builder/54a60a7c/update/"</script>
+<script id="search-url" type="application/json">"/builder/54a60a7c/search/"</script>
+<script id="versions" type="application/json">[]</script>
+<script id="metadata" type="application/json">{"coding_system_name": "SNOMED CT", "coding_system_release": {"release_name": "35.6.0", "valid_from": "2023-03-22"}, "organisation_name": null, "codelist_full_slug": "user/RachelS99/dfm-disorders-chronic-pain-syndrome", "hash": "54a60a7c"}</script>
+<script src="/static/js/builder.bundle.js"></script>
+</main>
+<footer id="footer" class="border-top bg-light mt-auto py-5">
+<div class="container">
+<ul class="list-inline text-center d-flex flex-column flex-md-row justify-content-center mb-0 mb-md-3">
+<li class="list-inline-item mb-3 mb-md-0 mr-0 mr-md-5">
+<a href="/docs/">
+Documentation
+</a>
+</li>
+<li class="list-inline-item mb-3 mb-md-0 mr-0">
+<a href="https://www.opensafely.org/">
+OpenSAFELY
+</a>
+</li>
+</ul>
+<ul class="list-inline text-center d-flex flex-column flex-md-row justify-content-center">
+<li class="list-inline-item mb-3 mb-md-0 mr-0 mr-md-5">
+<a href="https://www.bennett.ox.ac.uk/">
+Bennett Institute for Applied Data Science
+</a>
+</li>
+<li class="list-inline-item mb-3 mb-md-0">
+<a href="https://www.ox.ac.uk/">
+University of Oxford
+</a>
+</li>
+</ul>
+<div class="row">
+<div class="col-12 offset-md-1 col-md-10 offset-lg-2 col-lg-8 text-center mt-3 mb-0 small">
+<p>© University of Oxford for the Bennett Institute for Applied Data Science 2022. This work may be copied freely for non-commercial research and study. If you wish to do any of the other acts restricted by the copyright you should apply in writing to <a href="/cdn-cgi/l/email-protection#9aeefffbf7daf5eafff4e9fbfcfff6e3b4f5e8fd"><span class="__cf_email__" data-cfemail="b8ccddd9d5f8d7c8ddd6cbd9deddd4c196d7cadf">[email&#160;protected]</span></a>.</p>
+<p>SNOMED Clinical Terms® content © International Health Terminology Standards Development Organisation.</p>
+<p>ICD-10 codes, terms and text © World Health Organization, Third Edition. 2007.</p>
+</div>
+</div>
+</div>
+</footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
