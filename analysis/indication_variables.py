@@ -34,6 +34,7 @@ for file in os.listdir(OUTPUT_DIR):
 
         ind_conditions = [
             (df["alcohol_dependence"] == 1),
+            (df[["anxiety_disorder", "chronic_pain", "insomnia", "mental_disorder", "muscle_spasm", "neurological_pain", "sciatica", "post_covid"]].sum(1).gt(1)),
             (df["anxiety_disorder"] == 1),
             (df["chronic_pain"] == 1),
             (df["insomnia"] == 1),
@@ -44,7 +45,7 @@ for file in os.listdir(OUTPUT_DIR):
             (df["post_covid"] == 1),
         ]
     
-        ind_values = ["alcohol_dependence", "anxiety_disorder", "chronic_pain", "insomnia", "mental_disorder", "muscle_spasm", "neurological_pain", "sciatica", "post_covid"]
+        ind_values = ["alcohol_dependence", "two_or_more", "anxiety_disorder", "chronic_pain", "insomnia", "mental_disorder", "muscle_spasm", "neurological_pain", "sciatica", "post_covid"]
 
         df["indication"] = np.select(ind_conditions, ind_values)
 

@@ -11,6 +11,55 @@ dfm_codes = codelist_from_csv(
     category_column="bnf_code",
 )
 
+antidepressants = codelist_from_csv(
+    "codelists/user-RachelS99-dependence-forming-medications-antidepressants-dmd.csv",
+    system="snomed",
+    column='dmd_id',
+    category_column="bnf_code",
+)
+
+benzodiazepines = codelist_from_csv(
+    "codelists/user-RachelS99-dependence-forming-medications-benzodiazepines-dmd.csv",
+    system="snomed",
+    column='dmd_id',
+    category_column="bnf_code",
+)
+
+chloral_and_derivatives = codelist_from_csv(
+    "codelists/user-RachelS99-dependence-forming-medications-chloral-and-derivatives-dmd.csv",
+    system="snomed",
+    column='dmd_id',
+    category_column="bnf_code",
+)
+
+clomethiazole = codelist_from_csv(
+    "codelists/user-RachelS99-dependence-forming-medications-clomethiazole-dmd.csv",
+    system="snomed",
+    column='dmd_id',
+    category_column="bnf_code",
+)
+
+gabapentinoids = codelist_from_csv(
+    "codelists/user-RachelS99-dependence-forming-medications-gabapentinoids-dmd.csv",
+    system="snomed",
+    column='dmd_id',
+    category_column="bnf_code",
+)
+
+opioid_pain_medicine = codelist_from_csv(
+    "codelists/user-RachelS99-dependence-forming-medications-opioid-pain-medicine-dmd.csv",
+    system="snomed",
+    column='dmd_id',
+    category_column="bnf_code",
+)
+
+z_drugs = codelist_from_csv(
+    "codelists/user-RachelS99-dependence-forming-medications-z-drugs-dmd.csv",
+    system="snomed",
+    column='dmd_id',
+    category_column="bnf_code",
+)
+
 # Indications for prescribing dependence forming medications
 ind_codes = codelist_from_csv(
     "codelists/user-RachelS99-dfm-disorders-all.csv",
@@ -94,5 +143,26 @@ lungcan_codes = codelist_from_csv(
 
 epilepsy_codes = codelist_from_csv(
     "codelists/nhsd-primary-care-domain-refsets-epil_cod.csv",
+    system="snomed",
+)
+
+# Prescriptions
+repeat_prescription = codelist(
+    ["803911000000108"],
+    system="snomed",
+)
+
+repeat_changed = codelist(
+    ["268527000"],
+    system="snomed",
+)
+
+repeat_started = codelist(
+    ["170928000"],
+    system="snomed",
+)
+
+repeat_stopped = codelist(
+    ["170929008"],
     system="snomed",
 )

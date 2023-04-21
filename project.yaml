@@ -5,7 +5,7 @@ expectations:
 
 actions:
   generate_study_population:
-    run: cohortextractor:latest generate_cohort --study-definition study_definition --index-date-range "2022-02-01 to 2023-02-01 by month" --output-dir=output --output-format=csv
+    run: cohortextractor:latest generate_cohort --study-definition study_definition --index-date-range "2022-04-01 to 2023-03-01 by month" --output-dir=output --output-format=csv
     outputs:
       highly_sensitive:
         cohort: output/input*.csv
@@ -16,10 +16,17 @@ actions:
     outputs:
       highly_sensitive:
         cohort: output/inpu*.csv
+  
+  generate_medication:
+    run: python:latest python analysis/medication_variables.py
+    needs: [generate_indication]
+    outputs:
+      highly_sensitive:
+        cohort: output/inp*.csv
 
   generate_measures:
     run: cohortextractor:latest generate_measures --study-definition study_definition --output-dir=output
-    needs: [generate_indication]
+    needs: [generate_medication]
     outputs: 
       moderately_sensitive:
         measure_csv: output/measure_*_rate.csv
