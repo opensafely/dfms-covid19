@@ -3,6 +3,13 @@ nhsd-primary-care-domain-refsets/c19haemcan_cod/20210127
 opensafely/lung-cancer-snomed/2020-04-15
 nhsd-primary-care-domain-refsets/epil_cod/20210127
 user/RachelS99/dependence-forming-medications-dmd/2b6f8080
+user/RachelS99/dependence-forming-medications-antidepressants-dmd/79509a15
+user/RachelS99/dependence-forming-medications-benzodiazepines-dmd/4731b3ab
+user/RachelS99/dependence-forming-medications-chloral-and-derivatives-dmd/1512cd41
+user/RachelS99/dependence-forming-medications-clomethiazole-dmd/62f3e6d6
+user/RachelS99/dependence-forming-medications-gabapentinoids-dmd/30d5006c
+user/RachelS99/dependence-forming-medications-opioid-pain-medicine-dmd/7eb61a01
+user/RachelS99/dependence-forming-medications-z-drugs-dmd/4c973397
 user/RachelS99/social-prescribing-in-dependency/60fe7172
 user/RachelS99/gp-consults/71f5a4c5
 user/RachelS99/dfm-disorders-all/2539e408

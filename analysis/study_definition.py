@@ -8,11 +8,8 @@ from cohortextractor import (
     patients,
 )
 from demographic_variables import demographic_variables
-from indication_variables import indication_variables
-from medication_variables import medication_variables
 from codelists import *
 from datetime import date
-
 
 study = StudyDefinition(
     index_date = "2023-02-01",
@@ -83,12 +80,166 @@ study = StudyDefinition(
             "incidence": 0.95,
         },
     ),
+    dfm_6_months = patients.with_these_medications(
+        dfm_codes,
+        between = ["index_date - 6 months", "index_date"],
+        returning = "number_of_matches_in_period",
+        return_expectations = {
+            "int": {"distribution": "normal", "mean": 2, "stddev": 1},
+            "incidence": 0.2,
+        },
+    ),
+    repeat_dfm = patients.satisfying(
+        """
+        (dfm_6_months >= 3)
+        """,
+    ),
+    non_repeat_dfm = patients.satisfying(
+        """
+        (dfm_6_months < 3 AND dfm_6_months > 0)
+        """,
+    ),
+    antidepressants=patients.with_these_medications(
+        antidepressants,
+        find_last_match_in_period=True,
+        between=["index_date", "last_day_of_month(index_date)"],
+        returning="binary_flag",
+        return_expectations={
+            "incidence": 0.95,
+        },
+    ),
+    benzodiazepines=patients.with_these_medications(
+        benzodiazepines,
+        find_last_match_in_period=True,
+        between=["index_date", "last_day_of_month(index_date)"],
+        returning="binary_flag",
+        return_expectations={
+            "incidence": 0.95,
+        },
+    ),
+    chloral_and_derivatives=patients.with_these_medications(
+        chloral_and_derivatives,
+        find_last_match_in_period=True,
+        between=["index_date", "last_day_of_month(index_date)"],
+        returning="binary_flag",
+        return_expectations={
+            "incidence": 0.95,
+        },
+    ),
+    clomethiazole=patients.with_these_medications(
+        clomethiazole,
+        find_last_match_in_period=True,
+        between=["index_date", "last_day_of_month(index_date)"],
+        returning="binary_flag",
+        return_expectations={
+            "incidence": 0.95,
+        },
+    ),
+    gabapentinoids=patients.with_these_medications(
+        gabapentinoids,
+        find_last_match_in_period=True,
+        between=["index_date", "last_day_of_month(index_date)"],
+        returning="binary_flag",
+        return_expectations={
+            "incidence": 0.95,
+        },
+    ),
+    opioid_pain_medicine=patients.with_these_medications(
+        opioid_pain_medicine,
+        find_last_match_in_period=True,
+        between=["index_date", "last_day_of_month(index_date)"],
+        returning="binary_flag",
+        return_expectations={
+            "incidence": 0.95,
+        },
+    ),
+    z_drugs=patients.with_these_medications(
+        z_drugs,
+        find_last_match_in_period=True,
+        between=["index_date", "last_day_of_month(index_date)"],
+        returning="binary_flag",
+        return_expectations={
+            "incidence": 0.95,
+        },
+    ),
     with_indication=patients.with_these_clinical_events(
         ind_codes,
         on_or_before="index_date",
         returning="binary_flag",
         return_expectations={
             "incidence": 0.8,
+        },
+    ),
+    alcohol_dependence=patients.with_these_clinical_events(
+        alcohol_dependence,
+        on_or_before="index_date",
+        returning="binary_flag",
+        return_expectations={
+            "incidence": 0.05,
+        },
+    ),
+    anxiety_disorder=patients.with_these_clinical_events(
+        anxiety_disorder,
+        on_or_before="index_date",
+        returning="binary_flag",
+        return_expectations={
+            "incidence": 0.05,
+        },
+    ),
+    chronic_pain=patients.with_these_clinical_events(
+        chronic_pain,
+        on_or_before="index_date",
+        returning="binary_flag",
+        return_expectations={
+            "incidence": 0.05,
+        },
+    ),
+    insomnia=patients.with_these_clinical_events(
+        insomnia,
+        on_or_before="index_date",
+        returning="binary_flag",
+        return_expectations={
+            "incidence": 0.05,
+        },
+    ),
+    mental_disorder=patients.with_these_clinical_events(
+        mental_disorder,
+        on_or_before="index_date",
+        returning="binary_flag",
+        return_expectations={
+            "incidence": 0.05,
+            },
+    ),
+    muscle_spasm=patients.with_these_clinical_events(
+        muscle_spasm,
+        on_or_before="index_date",
+        returning="binary_flag",
+        return_expectations={
+            "incidence": 0.05,
+            },
+    ),
+    neurological_pain=patients.with_these_clinical_events(
+        neurological_pain,
+        on_or_before="index_date",
+        returning="binary_flag",
+        return_expectations={
+            "incidence": 0.05,
+        },
+    ),
+    sciatica=patients.with_these_clinical_events(
+        sciatica,
+        on_or_before="index_date",
+        returning="binary_flag",
+        return_expectations={
+            "incidence": 0.05,
+        },
+    ),
+    post_covid=patients.with_these_clinical_events(
+        post_covid,
+        on_or_before="index_date",
+        returning="binary_flag",
+        return_expectations={
+            "incidence": 0.05,
         },
     ),
     with_consultation=patients.with_these_clinical_events(
@@ -128,8 +279,6 @@ study = StudyDefinition(
             "incidence": 0.25,
         },
     ),
-    ** indication_variables,
-    ** medication_variables
 )
 
 measures = [
@@ -202,5 +351,17 @@ measures = [
         numerator="research_population",
         denominator="population",
         group_by=["with_social_prescribing", "with_consultation", "with_medication"],
+    ),
+    Measure(
+        id="repeat_prescribing_rate",
+        numerator="repeat_dfm",
+        denominator="population",
+        group_by="research_population"
+    ),
+    Measure(
+        id="non_repeat_prescribing_rate",
+        numerator="non_repeat_dfm",
+        denominator="population",
+        group_by="research_population"
     ),
 ]

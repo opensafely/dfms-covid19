@@ -30,6 +30,48 @@
       "downloaded_at": "2023-02-13 11:43:34.027893Z",
       "sha": "4026da41b8980bad0a2e68c02b2340f5a494e822"
     },
+    "user-RachelS99-dependence-forming-medications-antidepressants-dmd.csv": {
+      "id": "user/RachelS99/dependence-forming-medications-antidepressants-dmd/79509a15",
+      "url": "https://codelists.opensafely.org/codelist/user/RachelS99/dependence-forming-medications-antidepressants-dmd/79509a15/",
+      "downloaded_at": "2023-04-21 13:25:50.761914Z",
+      "sha": "525db1d14258b9dc001c937515cc278c7c5a114d"
+    },
+    "user-RachelS99-dependence-forming-medications-benzodiazepines-dmd.csv": {
+      "id": "user/RachelS99/dependence-forming-medications-benzodiazepines-dmd/4731b3ab",
+      "url": "https://codelists.opensafely.org/codelist/user/RachelS99/dependence-forming-medications-benzodiazepines-dmd/4731b3ab/",
+      "downloaded_at": "2023-04-21 13:25:54.408169Z",
+      "sha": "4ef90d7285819a6db9efa82047d1bc5e1be607e5"
+    },
+    "user-RachelS99-dependence-forming-medications-chloral-and-derivatives-dmd.csv": {
+      "id": "user/RachelS99/dependence-forming-medications-chloral-and-derivatives-dmd/1512cd41",
+      "url": "https://codelists.opensafely.org/codelist/user/RachelS99/dependence-forming-medications-chloral-and-derivatives-dmd/1512cd41/",
+      "downloaded_at": "2023-04-21 13:25:55.237205Z",
+      "sha": "8359ff14e208daa1233f5bb5df8364aaacf18913"
+    },
+    "user-RachelS99-dependence-forming-medications-clomethiazole-dmd.csv": {
+      "id": "user/RachelS99/dependence-forming-medications-clomethiazole-dmd/62f3e6d6",
+      "url": "https://codelists.opensafely.org/codelist/user/RachelS99/dependence-forming-medications-clomethiazole-dmd/62f3e6d6/",
+      "downloaded_at": "2023-04-21 13:25:55.573661Z",
+      "sha": "b3849cc102ece2b3ce5fd688543f97eb0468060e"
+    },
+    "user-RachelS99-dependence-forming-medications-gabapentinoids-dmd.csv": {
+      "id": "user/RachelS99/dependence-forming-medications-gabapentinoids-dmd/30d5006c",
+      "url": "https://codelists.opensafely.org/codelist/user/RachelS99/dependence-forming-medications-gabapentinoids-dmd/30d5006c/",
+      "downloaded_at": "2023-04-21 13:25:59.728302Z",
+      "sha": "5f9485bc99291a0214593b72c65763db3cf18c1c"
+    },
+    "user-RachelS99-dependence-forming-medications-opioid-pain-medicine-dmd.csv": {
+      "id": "user/RachelS99/dependence-forming-medications-opioid-pain-medicine-dmd/7eb61a01",
+      "url": "https://codelists.opensafely.org/codelist/user/RachelS99/dependence-forming-medications-opioid-pain-medicine-dmd/7eb61a01/",
+      "downloaded_at": "2023-04-21 13:26:07.296243Z",
+      "sha": "3f3a7bdc73e5fb6176490f917020619568a00da7"
+    },
+    "user-RachelS99-dependence-forming-medications-z-drugs-dmd.csv": {
+      "id": "user/RachelS99/dependence-forming-medications-z-drugs-dmd/4c973397",
+      "url": "https://codelists.opensafely.org/codelist/user/RachelS99/dependence-forming-medications-z-drugs-dmd/4c973397/",
+      "downloaded_at": "2023-04-21 13:26:10.012798Z",
+      "sha": "c9c060f0166e28c851845e84fcd65da6cf3ff307"
+    },
     "user-RachelS99-social-prescribing-in-dependency.csv": {
       "id": "user/RachelS99/social-prescribing-in-dependency/60fe7172",
       "url": "https://codelists.opensafely.org/codelist/user/RachelS99/social-prescribing-in-dependency/60fe7172/",
