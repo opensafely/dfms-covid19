@@ -34,7 +34,6 @@ for file in os.listdir(OUTPUT_DIR):
 
         med_conditions = [
             (df["antidepressants"] == 1),
-            (df[["benzodiazepines", "chloral_and_derivatives", "clomethiazole", "gabapentinoids", "opioid_pain_medicine", "z_drugs"]].sum(1).gt(1)),
             (df["benzodiazepines"] == 1),
             (df["chloral_and_derivatives"] == 1),
             (df["clomethiazole"] == 1),
@@ -43,7 +42,7 @@ for file in os.listdir(OUTPUT_DIR):
             (df["z_drugs"] == 1),
         ]
     
-        med_values = ["antidepressants", "two_or_more", "benzodiazepines", "chloral_and_derivatives", "clomethiazole", "gabapentinoids", "opioid_pain_medicine", "z_drugs"]
+        med_values = ["antidepressants", "benzodiazepines", "chloral_and_derivatives", "clomethiazole", "gabapentinoids", "opioid_pain_medicine", "z_drugs"]
 
         df["medication"] = np.select(med_conditions, med_values)
 
