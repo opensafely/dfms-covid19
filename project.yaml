@@ -4,12 +4,24 @@ expectations:
   population_size: 10000
 
 actions:
-  generate_study_population:
-    run: cohortextractor:latest generate_cohort --study-definition study_definition --index-date-range "2022-04-01 to 2023-03-01 by month" --output-dir=output --output-format=csv
+  generate_study_population_1:
+    run: cohortextractor:latest generate_cohort --study-definition study_definition --index-date-range "2018-01-01 to 2019-12-01 by month" --output-dir=output --output-format=csv
     outputs:
       highly_sensitive:
         cohort: output/input*.csv
 
+  generate_study_population_2:
+    run: cohortextractor:latest generate_cohort --study-definition study_definition --index-date-range "2020-01-01 to 2021-12-01 by month" --output-dir=output --output-format=csv
+    outputs:
+      highly_sensitive:
+        cohort: output/input_*.csv
+  
+  generate_study_population_3:
+    run: cohortextractor:latest generate_cohort --study-definition study_definition --index-date-range "2022-01-01 to 2023-04-01 by month" --output-dir=output --output-format=csv
+    outputs:
+      highly_sensitive:
+        cohort: output/inp*.csv
+ 
   generate_indication:
     run: python:latest python analysis/indication_variables.py
     needs: [generate_study_population]
@@ -22,7 +34,7 @@ actions:
     needs: [generate_indication]
     outputs:
       highly_sensitive:
-        cohort: output/inp*.csv
+        cohort: output/in*.csv
 
   generate_measures:
     run: cohortextractor:latest generate_measures --study-definition study_definition --output-dir=output
@@ -38,4 +50,3 @@ actions:
       moderately_sensitive:
         notebook: output/report*.html
         plots: output/*.png
-        tables: output/*.csv
