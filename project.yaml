@@ -24,7 +24,7 @@ actions:
  
   generate_indication:
     run: python:latest python analysis/indication_variables.py
-    needs: [generate_study_population]
+    needs: [generate_study_population_1, generate_study_population_2, generate_study_population_3]
     outputs:
       highly_sensitive:
         cohort: output/inpu*.csv
