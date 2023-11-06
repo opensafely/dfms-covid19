@@ -17,7 +17,7 @@ actions:
         cohort: output/input_*.csv
   
   generate_study_population_3:
-    run: cohortextractor:latest generate_cohort --study-definition study_definition --index-date-range "2022-01-01 to 2023-04-01 by month" --output-dir=output --output-format=csv
+    run: cohortextractor:latest generate_cohort --study-definition study_definition --index-date-range "2022-01-01 to 2023-0409-01 by month" --output-dir=output --output-format=csv
     outputs:
       highly_sensitive:
         cohort: output/inp*.csv
@@ -42,11 +42,10 @@ actions:
     outputs: 
       moderately_sensitive:
         measure_csv: output/measure_*_rate.csv
-
-  generate_report:
-    run: jupyter:latest jupyter nbconvert /workspace/analysis/report*.ipynb --execute --to html --template basic --output-dir=/workspace/output --ExecutePreprocessor.timeout=86400 --no-input
+  
+  redact_measures:
+    run: r:latest analysis/redact_measures.R
     needs: [generate_measures]
     outputs:
-      moderately_sensitive:
-        notebook: output/report*.html
-        plots: output/*.png
+     moderately_sensitive:
+        csvs: output/redacted*.csv

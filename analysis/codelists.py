@@ -119,6 +119,12 @@ socialrx_codes = codelist_from_csv(
 
 # GP Consultations
 gp_consultations = codelist_from_csv(
+    "codelists/user-RachelS99-medication_review.csv",
+    system="snomed",
+)
+
+# Med review
+med_review = codelist_from_csv(
     "codelists/user-RachelS99-gp-consults.csv",
     system="snomed",
 )
